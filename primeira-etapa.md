@@ -1,5 +1,3 @@
-# DIW
-
 ## Preparação da estrutura do projeto
  - Crie a pasta raíz do projeto (**projetonoprato**).
  - Crie a pasta **resources** para armazenar os dados produzidos por nós (códigos, imagens, etc)
