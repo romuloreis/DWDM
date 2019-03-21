@@ -87,7 +87,7 @@ html {
 
 ```
 
-Agora vamos baixar o arquivo [grid.css]() fornecido por responsivegridsystem.com no diretório vendors/css/
+Agora vamos baixar o arquivo [grid.css](https://github.com/romuloreis/DWDM/blob/master/grid.css) fornecido por responsivegridsystem.com no diretório vendors/css/
 
 Para usar o grid.css é necessário importar ele no html, como demonstrado no trecho de código abaixo:
 
