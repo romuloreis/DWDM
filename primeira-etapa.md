@@ -40,7 +40,7 @@ Vamos usar a fonte Lato Thin 100, Light 300, Light 300 italic, Normal 400 (dispo
 ## Criando nossa primeira página
 Abra seu editor de texto
  - Crie o documento html **index.html** (Na pasta raíz do projeto) 
- - Crie a folha de estilho **style.css** (Dentro de reources/css)
+ - Crie a folha de estilo **style.css** (Dentro de reources/css)
 
 Vamos criar a estrutura básica de html no arquivo index.html, incluindo a importação do nosso arquivo de estilo style.css, do normalize.css para corrigir possíveis bus de navegadores e da fonte Lato fornecida pela api da google.
 ```html
