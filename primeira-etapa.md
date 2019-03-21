@@ -1,5 +1,5 @@
 ## Preparação da estrutura do projeto
- - Crie a pasta raíz do projeto (**projetonoprato**).
+ - Crie a pasta raiz do projeto (**projetonoprato**).
  - Crie a pasta **resources** para armazenar os dados produzidos por nós (códigos, imagens, etc)
  - Dentro da pasta **resources**, crie as quatro pastas a seguir: 
     - **css** - para armazenar as folhas de estilho desenvolvidas por nós.
@@ -8,7 +8,7 @@
     - **data** - para armazenar demais arquivos desenvolvidos por nós.
  - Dentro da pasta **css**, crie uma pasta **img** para armazenar imagens utilizadas para estilo, como imagens de fundo.
  - No mesmo nível da pasta  **resources** crie a pasta **vendors** para armazenar arquivos de terceiros, que NÃO foram desenvolvidos por nós. 
- - Dentro da pasta **vendors** crie as seguites pastas: 
+ - Dentro da pasta **vendors** crie as seguintes pastas: 
     - **css**
     - **fonts**
     - **js**
