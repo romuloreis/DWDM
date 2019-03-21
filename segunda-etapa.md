@@ -38,7 +38,7 @@ h1 {
 }
 ```
 
-Note tamém que a imagem de fundo está "cortada", mas nós queremos ver toda ela, sendo assim, vamos definir o valor *cover* para a propriedade background-size. Também vamos deixar a posição da imagem centralizada.
+Note também que a imagem de fundo está "cortada", mas nós queremos ver toda ela, sendo assim, vamos definir o valor *cover* para a propriedade background-size. Também vamos deixar a posição da imagem centralizada.
 
 ```css
 header {
