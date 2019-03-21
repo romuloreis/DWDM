@@ -60,7 +60,7 @@ Agora vamos Ajustar a posição do nosso conteúdo de chamada que está dentro d
 }
 ```
 
-Note que ralmente o box ficou 50% distante do topo e da margem esquerda. Funcinou, mas ficou com o aspecto estranho. Queremos essa caixa um pouco mais para a esquerda.
+Note que realmente o box ficou 50% distante do topo e da margem esquerda. Funcionou, mas ficou com o aspecto estranho. Queremos essa caixa um pouco mais para a esquerda.
 Então usaremos a propriedade tramsform: translate que para diminuir esse espaçamento com margem baseado na metade da altura e largura do elemento.
 
 ```css
