@@ -95,7 +95,7 @@ h1 {
     letter-spacing: 1px;
 }
 ```
-Visto que nosso texto de chamada está mais apresentável, vamos organizer nossos dois links, para deixar eles com aparencia de botões. Cada botão terá um estilo diferente, o primeiro terá o fundo colorido e o outro terá o fundo inicialmente transparente.
+Visto que nosso texto de chamada está mais apresentável, vamos organizar nossos dois links, para deixar eles com aparência de botões. Cada botão terá um estilo diferente, o primeiro terá o fundo colorido e o outro terá o fundo inicialmente transparente.
 
 ```html
     <body>
@@ -108,7 +108,7 @@ Visto que nosso texto de chamada está mais apresentável, vamos organizer nosso
         <header>
     </body>
 ```                   
-Primeiramente vamos configurar o que é comum para ambos os botões. Detalhe, para poder definir padding e margin de um elemento <a>, é necessário "transfomar" ele em inline-block por meio da propriedade display. Também é hora de remover o sublinhado do link.
+Primeiramente vamos configurar o que é comum para ambos os botões. Detalhe, para poder definir padding e margin de um elemento 'a', é necessário "transfomar" ele em inline-block por meio da propriedade display. Também é hora de remover o sublinhado do link.
 
 ```css
 .btn{
@@ -127,7 +127,7 @@ Dica para escolher cores: flatuicolors.com
 }
 ```
 
-Agora que nosso botão já tem cor de fundo, vamos arrendondar suas bordas.
+Agora que nosso botão já tem cor de fundo, vamos arredondar suas bordas.
 ```css
 .btn{
     display: inline-block;
