@@ -32,8 +32,6 @@
 ## Recursos externos
 Para corrigir erros gerados pela falta de padrão entre os navegadores, baixe a última versão do normalize css do [repositório oficial](https://github.com/necolas/normalize.css/). Por ser um código externo, deve ser salvo no diretório vendors/css.
 
-[Responsive Grid System](http://www.responsivegridsystem.com/)
-
 Vamos usar a fonte Lato Thin 100, Light 300, Light 300 italic, Normal 400 (disponível [aqui](https://fonts.google.com/))
 <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
 
