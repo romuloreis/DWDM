@@ -5,8 +5,8 @@ Primeiramente vamos criar nosso header, onde vamos criar nossos primeiros três 
         <header>
             <div class="hero-text-box">
                <h1>Super frase de impacto.<br>Pois é super chamativo e funciona.</h1>
-               <a href="#">Comprar agora<a/>
-               <a href="#">Cardápio completo<a/>
+               <a href="#">Comprar agora</a>
+               <a href="#">Cardápio completo</a>
             </div>
         <header>
     </body>
@@ -54,7 +54,7 @@ Agora vamos Ajustar a posição do nosso conteúdo de chamada que está dentro d
 ```css
 .hero-text-box {
     position: absolute;
-    width: 1140px;
+    width: 1000px; /*verificar se esse valor é adequado para seu monitor*/
     top: 50%;
     left: 50%;
 }
@@ -102,8 +102,8 @@ Visto que nosso texto de chamada está mais apresentável, vamos organizar nosso
         <header>
             <div class="hero-text-box">
                <h1>Super frase de impacto.<br>Pois é super chamativo e funciona.</h1>
-               <a class="btn btn-full" href="#">Comprar agora<a/>
-               <a class="btn btn-ghost" href="#">Cardápio completo<a/>
+               <a class="btn btn-full" href="#">Comprar agora</a>
+               <a class="btn btn-ghost" href="#">Cardápio completo</a>
             </div>
         <header>
     </body>
