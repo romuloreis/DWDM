@@ -114,6 +114,9 @@ h1 {
     letter-spacing: 1px;
 }
 ```
+
+## Dando aspecto de botões aos links
+
 Visto que nosso texto de chamada está mais apresentável, vamos organizar nossos dois links, para deixar eles com aparência de botões. Cada botão terá um estilo diferente, o primeiro terá o fundo colorido e o outro terá o fundo inicialmente transparente.
 
 ```html
@@ -270,7 +273,7 @@ Para a transição de uma cor para outra ser mais lenta, podemos usar a propried
 
 ## Próxima etapa é ajustar a logo da empresa e o menu de navegação
 
-Vamos criar uma linha (row) dentro de uma seção de navegação (<nav>). Dentro dessa linha teremos a logo da empresa e uma lista de links.
+Vamos criar uma linha (row) dentro de uma seção de navegação (nav). Dentro dessa linha teremos a logo da empresa e uma lista de links.
 
 ```html
     <body>
