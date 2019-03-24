@@ -9,9 +9,10 @@ Crédito da foto: [Playstation](https://www.playstation.com/en-us/)
 Crédito da foto: [Paypal](https://www.paypal.com/br/home)
 
 Nessa etapa, vamos construir a primeira parte da nossa one-page web.  Para saber mais sobre HERO HEADER, você pode acessar esse material:
-    - [Dicas e ideias para construir hero headers.](https://cssanimation.rocks/build-hero-header/) 
-    - [Mais dicas sobre criação de hero headers.](https://designmodo.com/hero-headers/) 
-    - [Outra página sobre o tema](https://www.uxpin.com/studio/blog/web-design-trends-analyzed-hero-headers-letterboxes/)
+
+   - [Dicas e ideias para construir hero headers.](https://cssanimation.rocks/build-hero-header/) 
+   - [Mais dicas sobre criação de hero headers.](https://designmodo.com/hero-headers/) 
+   - [Outra página sobre o tema](https://www.uxpin.com/studio/blog/web-design-trends-analyzed-hero-headers-letterboxes/)
 
 
 
