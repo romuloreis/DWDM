@@ -191,6 +191,7 @@ h1 {
     text-transform: uppercase;
     word-spacing: 4px;
     letter-spacing: 1px;
+    font-weight: 300; 
 }
 ```
 
