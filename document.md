@@ -6,12 +6,12 @@
 4. Inscreva-se
 
 
-## Seção 0: Header com imagem e navegação
+## Seção 0: Hero Header com imagem e navegação
 
 Título: Nenhum
 
-Super frase de impacto.Pois é super chamativo e funciona.
+Adeus fast food do mal. Olá comida saúdavel do bem.
 
-Button 1: Comprar agora
+Botão 1: Comprar Agora.
 
-Button 2: Cardápio complet
+Botão 2: Mais Informações.
