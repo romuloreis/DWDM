@@ -1,3 +1,14 @@
+# Hero Header
+
+One of the biggest trends in web design right now is the use of big images. And not just large, but completely oversized images that seem to come to life on screen. When used at the top of a page, this is often referred to as a hero header.
+
+Nessa etapa, vamos construir a primeira parte da nossa one-page web.  Para saber mais sobre HERO HEADER, você pode acessar esse material: [Dicas e ideias para construir hero headers.](https://cssanimation.rocks/build-hero-header/) [Mais dicas sobre criação de hero headers.](https://designmodo.com/hero-headers/) [Outra página sobre o tema](https://www.uxpin.com/studio/blog/web-design-trends-analyzed-hero-headers-letterboxes/)
+
+
+Crédito da foto: [Playstation](https://www.playstation.com/en-us/)
+Crédito da foto: [Paypal](https://www.paypal.com/br/home)
+
+
 Primeiramente vamos criar nosso header, onde vamos criar nossos primeiros três elementos, uma chamada atrativa e dois links.
 
 ```html
