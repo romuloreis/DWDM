@@ -27,7 +27,7 @@ Primeiramente vamos criar nosso header no arquivo index.html. Dentro do header v
                <a href="#">Comprar agora</a>
                <a href="#">Mais informações</a>
             </div>
-        <header>
+        </header>
     </body>
 ```
 
@@ -288,7 +288,7 @@ Vamos criar uma linha (row) dentro de uma seção de navegação (<nav>). Dentro
                <a class="btn btn-full" href="#">Comprar agora</a>
                <a class="btn btn-ghost" href="#">Mais informações</a>
             </div>
-        <header>
+        </header>
     </body>
 ```    
 No estilo
