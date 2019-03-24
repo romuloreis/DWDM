@@ -97,7 +97,7 @@ Para usar o grid.css é necessário importar ele no html, como demonstrado no tr
         <!-- Importação do sistema de grid -->
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <!-- Importação do nossa folha de estilo -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <!-- Importação da fonte Lato -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
         <title>Saúde no Prato</title>
