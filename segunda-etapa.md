@@ -15,35 +15,36 @@ Nessa etapa, vamos construir a primeira parte da nossa one-page web.  Para saber
    - [Outra página sobre o tema](https://www.uxpin.com/studio/blog/web-design-trends-analyzed-hero-headers-letterboxes/)
 
 
+## Mãos à obra
 
-Primeiramente vamos criar nosso header, onde vamos criar nossos primeiros três elementos, uma chamada atrativa e dois links.
+Primeiramente vamos criar nosso header no arquivo index.html. Dentro do header vamos criar nossos primeiros três elementos, que são uma chamada atrativa e dois links, os quais vamos deixar com carinha de botões (spoiler).
 
 ```html
     <body>
         <header>
             <div class="hero-text-box">
-               <h1>Super frase de impacto.<br>Pois é super chamativo e funciona.</h1>
+               <h1>Adeus fast food do mal. <br> Olá comida saúdavel do bem.</h1>
                <a href="#">Comprar agora</a>
-               <a href="#">Cardápio completo</a>
+               <a href="#">Mais informações</a>
             </div>
         <header>
     </body>
 ```
 
-Após verificar como ficou o index.html no navegador, vamos procurar uma imagem para usar como fundo do nosso header. Coloque o arquivo da imagem no diretório resources/css/img, pois vai ser utilizado apenas pelo css, não sendo um conteúdo propriamente dito da nossa página.
+Após verificar como ficou o index.html no navegador, vamos procurar uma imagem para usar como fundo do nosso header. Baixe o arquivo da imagem selecionada no diretório resources/css/img, pois vai ser utilizado apenas pelo css, não sendo um conteúdo propriamente dito da nossa página.
 
-Após baixar a imagem, vamos defini-la como imagem de fundo do header no style.css
+Após baixar a imagem, vamos definir ela como imagem de fundo do header no arquivo style.css
 
 ```css
 header {
-    background-image: url(img/nome_img_hero.jpg);
+    background-image: url(resources/img/nome_img_hero.jpg);
 }
 ```
 Abra o index.html no navegador e note que a imagem preencher apenas o conteúdo do box. Mas queremos que a imagem preencha todo o viewport. Para isso devemos definir a propriedade height do header para 100vh (100% do viewport).
 
 ```css
 header {
-    background-image: url(img/nome_img_hero.jpg);
+    background-image: url(resources/img/nome_img_hero.jpg);
     height: 100vh;
 }
 ```
@@ -60,7 +61,7 @@ Note também que a imagem de fundo está "cortada", mas nós queremos ver toda e
 
 ```css
 header {
-    background-image: url(img/hero.jpg);
+    background-image: url(resources/img/nome_img_hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -95,7 +96,7 @@ Para deixar a imagem mais escura, com objetivo do conteúdo da página chamar ma
 
 ```css
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /*explore outras cores e transparências*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/img/nome_img_hero.jpg); /*explore outras cores e transparências*/
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -119,9 +120,9 @@ Visto que nosso texto de chamada está mais apresentável, vamos organizar nosso
     <body>
         <header>
             <div class="hero-text-box">
-               <h1>Super frase de impacto.<br>Pois é super chamativo e funciona.</h1>
+               <h1>Adeus fast food do mal. <br> Olá comida saúdavel do bem.</h1>
                <a class="btn btn-full" href="#">Comprar agora</a>
-               <a class="btn btn-ghost" href="#">Cardápio completo</a>
+               <a class="btn btn-ghost" href="#">Mais informações</a>
             </div>
         <header>
     </body>
@@ -283,9 +284,9 @@ Vamos criar uma linha (row) dentro de uma seção de navegação (<nav>). Dentro
                 </div>
             <nav>
             <div class="hero-text-box">
-               <h1>Super frase de impacto.<br>Pois é super chamativo e funciona.</h1>
-               <a class="btn btn-full" href="#">Comprar agora<a/>
-               <a class="btn btn-ghost" href="#">Cardápio completo<a/>
+               <h1>Adeus fast food do mal. <br> Olá comida saúdavel do bem.</h1>
+               <a class="btn btn-full" href="#">Comprar agora</a>
+               <a class="btn btn-ghost" href="#">Mais informações</a>
             </div>
         <header>
     </body>
