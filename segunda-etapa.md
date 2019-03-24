@@ -171,6 +171,7 @@ Ok, o botão está 1px maior que o outro, então vamos colocar uma borda no prim
 
 ```css
 .btn-full {
+    background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
 }
@@ -207,6 +208,7 @@ Para deixar nossos botões mais "dinâmicos". Links em css tem diverentes estado
 
 .btn-full:link,
 .btn-full:visited  {
+    background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
 }
@@ -239,6 +241,7 @@ Coloque um valor de espaçamento na margem da direita para afastar os botões
 ```css
 .btn-full:link,
 .btn-full:visited  {
+    background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
     margin-right: 15px; /*espaçamento entre os btões*/
