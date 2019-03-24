@@ -31,7 +31,7 @@ Primeiramente vamos criar nosso header no arquivo index.html. Dentro do header v
     </body>
 ```
 
-Após verificar como ficou o index.html no navegador, vamos procurar uma imagem para usar como fundo do nosso header. Baixe o arquivo da imagem selecionada no diretório resources/css/img, pois vai ser utilizado apenas pelo css, não sendo um conteúdo propriamente dito da nossa página.
+Após verificar como ficou o index.html no navegador, vamos procurar uma imagem (bem grande) para usar como fundo do nosso header. Baixe o arquivo da imagem selecionada no diretório resources/css/img, pois vai ser utilizado apenas pelo css, não sendo um conteúdo propriamente dito da nossa página.
 
 Após baixar a imagem, vamos definir ela como imagem de fundo do header no arquivo style.css
 
@@ -124,7 +124,7 @@ Visto que nosso texto de chamada está mais apresentável, vamos organizar nosso
                <a class="btn btn-full" href="#">Comprar agora</a>
                <a class="btn btn-ghost" href="#">Mais informações</a>
             </div>
-        <header>
+        </header>
     </body>
 ```                   
 Primeiramente vamos configurar o que é comum para ambos os botões. Detalhe, para poder definir padding e margin de um elemento 'a', é necessário "transfomar" ele em inline-block por meio da propriedade display. Também é hora de remover o sublinhado do link.
