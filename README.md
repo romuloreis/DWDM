@@ -9,6 +9,8 @@ Lembre-se de manter a documentação sempre atualizada e aproveite essa oportuni
 
 ## One-page web
 
-  - [Documentação inicial](https://github.com/romuloreis/DWDM/blob/master/document.md)
+  - [Documentação inicial](https://github.com/romuloreis/DWDM/blob/master/documento%201.md)
   - [Preparação da estrutura do projeto](https://github.com/romuloreis/DWDM/blob/master/primeira-etapa.md)
   - [Hero Header](https://github.com/romuloreis/DWDM/blob/master/segunda-etapa.md)
+  - [Documentação versão 2](https://github.com/romuloreis/DWDM/blob/master/documento%202.md)
+  - [Features](https://github.com/romuloreis/DWDM/blob/master/terceira-etapa.md)
