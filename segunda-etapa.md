@@ -37,14 +37,14 @@ Após baixar a imagem, vamos definir ela como imagem de fundo do header no arqui
 
 ```css
 header {
-    background-image: url(resources/img/nome_img_hero.jpg);
+    background-image: url(img/nome_img_hero.jpg);
 }
 ```
 Abra o index.html no navegador e note que a imagem preencher apenas o conteúdo do box. Mas queremos que a imagem preencha todo o viewport. Para isso devemos definir a propriedade height do header para 100vh (100% do viewport).
 
 ```css
 header {
-    background-image: url(resources/img/nome_img_hero.jpg);
+    background-image: url(img/nome_img_hero.jpg);
     height: 100vh;
 }
 ```
@@ -61,7 +61,7 @@ Note também que a imagem de fundo está "cortada", mas nós queremos ver toda e
 
 ```css
 header {
-    background-image: url(resources/img/nome_img_hero.jpg);
+    background-image: url(img/nome_img_hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -96,7 +96,7 @@ Para deixar a imagem mais escura, com objetivo do conteúdo da página chamar ma
 
 ```css
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(resources/img/nome_img_hero.jpg); /*explore outras cores e transparências*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nome_img_hero.jpg); /*explore outras cores e transparências*/
     background-size: cover;
     background-position: center;
     height: 100vh;
