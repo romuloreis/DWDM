@@ -150,10 +150,9 @@ section {
 Ainda no arquivo _style.css_, vamos agrupar as propriedades que os elementos h_n_ tem em comum e configurar o estilo de h2.
 
 ```css
-h1, h2 {
+h1, h2, h3 {
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 h1 {
@@ -162,6 +161,7 @@ h1 {
     color: #fff;
     font-size: 240%;
     word-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -169,12 +169,86 @@ h2 {
     word-spacing: 2px;
     text-align: center; /*Centralizando o texto*/
     margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
 }
 ```
 
 Agora vamos colocar uma pequena linha amarela entre o conteúdo de h2 e o texto abaixo dele. Para isso, usaremos a pseudo classe _:after_, a qual indica que será colocado algo após a tag em que a pseudo classe está atribuída (ex. h2:after - ocorre após a tag h2). Ao usar _:after_ é necessário colocar um valor para a propriedade _content_, neste caso, não queremos nenhum texto, então basta colocar um espaço como valor.
 
+```css
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " "; /*Conteúdo do item*/
+    width: 100px; /*Comprimento do item*/
+    margin: 0 auto; /*Centralizar*/
+    margin-top: 30px;
+}
+```
 
+> Entenda mais sobre pseudo classes [aqui](https://www.w3schools.com/css/css_pseudo_classes.asp).
 
-> Entrnda mais sobre pseudo classes [aqui](https://www.w3schools.com/css/css_pseudo_classes.asp)
-> Entrnda mais sobre pseudo elementos [aqui](https://www.w3schools.com/css/css_pseudo_elements.asp)
+> Entenda mais sobre pseudo elementos [aqui](https://www.w3schools.com/css/css_pseudo_elements.asp).
+
+## Ajustando o parágrafo principal
+
+O parágrafo da seção de features pode ter ficado bem cumprido, nesse caso, vamos fazer ele ficar menos cumprido e ainda assim ficar no centro da tela. Use os valores que melhor se adequarem ao site, no meu caso, 70% de largura e 15% de margens funcionou bem.
+
+```css
+.long-copy {
+    line-height:145%;
+    width: 70%; /*ocupa 70%, sobra 30%*/
+    margin-left: 15%; /*15% para cada lado*/
+}
+```
+## Ajustando colunas
+
+No arquivo **index.html**, vamos criar a classe _box_ e incluir logo após _span-1-of-4_. Depois vamos definir as configurações da classe _box_ no arquivo **styles.css**.
+
+```html
+    <div class="col span-1-of-4 box">
+        <ion-icon name="infinite"></ion-icon>
+        <h3>Aberto 365 dias</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. 
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+    <div class="col span-1-of-4 box">
+        <ion-icon name="stopwatch"></ion-icon>
+        <h3>Pronto em 15 min.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. 
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+    <div class="col span-1-of-4 box">
+        <ion-icon name="nutrition"></ion-icon>
+        <h3>100% organico</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. 
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+    <div class="col span-1-of-4 box">
+        <ion-icon name="card"></ion-icon>
+        <h3>Aceitamos cartões</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. 
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+```
+
+```css 
+.box {
+    padding: 1%; /*dá um pequeno espaçamento entre o conteúdo e o container.*/
+}
+```
+
+O texto de cada coluna deve estar com uma fonte relativamente grande. vamos formatar o texto dos parágrafos dentro das classes _box_.
+
+```css 
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+```
