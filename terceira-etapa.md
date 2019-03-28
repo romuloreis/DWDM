@@ -24,7 +24,7 @@ Como queremos nosso conteúdo centralizado, vamos criar uma _div_ com a classe _
   </section>
 ```
 
-Vamos incluir o título e o paragráfo principal desta seção, de acordo com seu documento versão 2. No caso da página da saúde no prato, vou usar [caracteres especiais do html](https://www.w3schools.com/html/html_entities.asp), pois quero usar um híven mais comprido (mdash) entre as duas frases do título. 
+Vamos incluir o título e o paragráfo principal desta seção, de acordo com seu documento versão 2. No caso da página da saúde no prato, vou usar [caracteres especiais do html](https://www.w3schools.com/html/html_entities.asp), pois quero usar um hífen mais comprido (mdash) entre as duas frases do título. 
 
 ```html
   <section class="section-features">
@@ -41,7 +41,7 @@ Vamos incluir o título e o paragráfo principal desta seção, de acordo com se
 
 ## Fluid Grid na prática
 
-Vamos criar uma _div_ com classe _row_ e dentro dela vamos criar uma _div_ para cada coluna. Cada coluna vai ser da classe _col_ que é definida pelo grid.css. Tabmém vamos definir a classe _span-x-of-z_ para cada coluna. Como temos 4 colunas, firaca _span-1-of-4_
+Terminado a parte superior da nossa seção de features, vamos inciar a parte inferior da seção, que será composto por 4 colunas. Primeiramente, vamos criar uma _div_ e definir a classe desta _div_ como _row_. Agora, dentro da _div_ _row_ vamos criar uma _div_ para cada coluna. Cada coluna (_div_) vai ser da classe _col_ que é definida pelo grid.css. Tabmém vamos definir a classe _span-x-of-z_ para cada coluna. Como temos 4 colunas, o nome da classe ficaria _span-1-of-4_.
 
 ```html
     <section class="section-features">
@@ -53,7 +53,16 @@ Vamos criar uma _div_ com classe _row_ e dentro dela vamos criar uma _div_ para 
         </div>
         <div class="row">
             <div class="col span-1-of-4">
-
+                <!-- Primeira coluna-->
+            </div>            
+            <div class="col span-1-of-4">
+                <!-- Segunda coluna-->
+            </div>
+            <div class="col span-1-of-4">
+                <!-- Terceira coluna-->
+            </div>            
+            <div class="col span-1-of-4">
+                <!-- Quarta coluna-->
             </div>
         </div>
     </section>
@@ -74,7 +83,7 @@ Agora vamos colocar o conteúdo em cada coluna.
                   Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
             </div>
             <div class="col span-1-of-4">
-                <h3>100% organico</h3>
+                <h3>100% orgânico</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. 
                   Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
             </div>
@@ -86,6 +95,44 @@ Agora vamos colocar o conteúdo em cada coluna.
         </div>
 ```
 
-## Icones
+## Ícones
 
-Precisamos encontrar um icone para cada feature. Há varios sites [como ionicons.com](https://ionicons.com/) que disponibilizam icones sob diferentes licenças.
+Precisamos encontrar um ícone que melhor represente cada feature. Há varios sites que disponibilizam icones sob diferentes licenças. Para esse projeto vou utilizar os ícones disponibilizados no [ionicons.com](https://ionicons.com/). Para poder usá-los, basta incluir a linha de código abaixo no final do documento HTML, logo após o fechamento da tag HTML.
+
+```html
+    <!--todo o código da minha página está acima-->
+  </body>
+</html>
+<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+```
+
+Está na hora de incluirmos nossos 4 íncones
+
+```html
+<div class="row">
+    <div class="col span-1-of-4">
+        <ion-icon name="infinite"></ion-icon>
+        <h3>Aberto 365 dias</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor.
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+    <div class="col span-1-of-4">
+        <ion-icon name="stopwatch"></ion-icon>
+        <h3>Pronto em 15 min.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor.
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+    <div class="col span-1-of-4">
+        <ion-icon name="nutrition"></ion-icon>
+        <h3>100% organico</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor.
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+    <div class="col span-1-of-4">
+        <ion-icon name="card"></ion-icon>
+        <h3>Aceitamos cartões</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor.
+          Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
+    </div>
+ </div>
+```
