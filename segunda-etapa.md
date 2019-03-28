@@ -88,7 +88,7 @@ Então usaremos a propriedade tramsform: translate que para diminuir esse espaç
 ```css
 .hero-text-box {
     position: absolute;
-    width: 1140px;
+    width: 1000px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
