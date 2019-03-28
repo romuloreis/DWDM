@@ -136,3 +136,45 @@ Está na hora de incluirmos nossos 4 íncones
     </div>
  </div>
 ```
+
+## Definindo espaçamento entre as seções da nossa one-page web.
+
+No arquivo _style.css_ vamos colocar um espaçamento entre as seções da página.
+
+```css
+section {
+  padding: 80px 0;
+}
+```
+
+Ainda no arquivo _style.css_, vamos agrupar as propriedades que os elementos h_n_ tem em comum e configurar o estilo de h2.
+
+```css
+h1, h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center; /*Centralizando o texto*/
+    margin-bottom: 30px;
+}
+```
+
+Agora vamos colocar uma pequena linha amarela entre o conteúdo de h2 e o texto abaixo dele. Para isso, usaremos a pseudo classe _:after_, a qual indica que será colocado algo após a tag em que a pseudo classe está atribuída (ex. h2:after - ocorre após a tag h2). Ao usar _:after_ é necessário colocar um valor para a propriedade _content_, neste caso, não queremos nenhum texto, então basta colocar um espaço como valor.
+
+
+
+> Entrnda mais sobre pseudo classes [aqui](https://www.w3schools.com/css/css_pseudo_classes.asp)
+> Entrnda mais sobre pseudo elementos [aqui](https://www.w3schools.com/css/css_pseudo_elements.asp)
