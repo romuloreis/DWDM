@@ -272,3 +272,11 @@ O texto de cada coluna deve estar com uma fonte relativamente grande. vamos form
     line-height: 145%;
 }
 ```
+
+Para encerrar essa seção, vamos aumentar o espaço entre o parágrafo principal da seção as features
+
+```css 
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+```
