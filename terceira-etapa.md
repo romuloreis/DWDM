@@ -6,7 +6,15 @@ Após construir o hero header, vamos construir uma página para apresentar as pr
   - Adicionar conteúdo direto do css com a pseudo classe _:after_
   - Fluid Grid na prática 
   - Icones
-## Criando uma Section
+  
+![Image of feature page from web](https://github.com/romuloreis/DWDM/blob/master/assets/feature-list-example.jpg)
+Exemplo de página de features.
+     
+![Image of feature page from web]( https://github.com/romuloreis/DWDM/blob/master/assets/features-saudenoprato.png)
+Página de features que será desenvolvido neste post.
+   
+  
+## Criando a Section features
 
 No arquivo **index.html**, vamos adicionar uma _section_, logo após o fechamento da tag _header_. Vamos criar a classe "_section-features_" para essa seção.
 
