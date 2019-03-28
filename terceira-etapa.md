@@ -106,7 +106,7 @@ Precisamos encontrar um ícone que melhor represente cada feature. Há varios si
 <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 ```
 
-Está na hora de incluirmos nossos 4 íncones
+Está na hora de incluirmos nossos 4 íncones. Para especificar o tamanho do ícone, você pode usar o atributo _size_, o qual é opcional. Caso os tamanhos pré-definidos não sejam adequados para sua página, você pode definir um tamanho específico por meio da propriedade _font-size_ no arquivo _styles.css_, usando o seletor _ion-icon_. Lembre-se que é recomendado usar tamanhos múltiplos de 8 (8, 16, 32, 64, etc.) se for utilizar como unidade o pixel. 
 
 ```html
 <div class="row">
@@ -135,6 +135,18 @@ Está na hora de incluirmos nossos 4 íncones
           Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
     </div>
  </div>
+```
+
+Como vamos alterar várias propriedades dos ícones desta seção, é mais natural ajustar o tamanho dos ícones por CSS. Sendo assim, Crie a seguinte regra no arquivo _styles.css_
+
+
+```css
+ion-icon {
+    font-size: 350%; /*Tamanho do ícone*/
+    display: block;
+    color: #e67e22; /*cor da fonte = cor do ícone*/
+    margin-bottom: 10px; /*espaço entre o ícone e o título do feature*/
+}
 ```
 
 ## Definindo espaçamento entre as seções da nossa one-page web.
@@ -209,7 +221,7 @@ O parágrafo da seção de features pode ter ficado bem cumprido, nesse caso, va
 ```
 ## Ajustando colunas
 
-No arquivo **index.html**, vamos criar a classe _box_ e incluir logo após _span-1-of-4_. Depois vamos definir as configurações da classe _box_ no arquivo **styles.css**.
+No arquivo _index.html_, vamos criar a classe _box_ e incluir logo após _span-1-of-4_. Depois vamos definir as configurações da classe _box_ no arquivo _styles.css_
 
 ```html
     <div class="col span-1-of-4 box">
