@@ -8,6 +8,9 @@ Crédito da foto: [Playstation](https://www.playstation.com/en-us/)
 ![Image of hero header from paypal](https://github.com/romuloreis/DWDM/blob/master/assets/hero-header-paypal.png)
 Crédito da foto: [Paypal](https://www.paypal.com/br/home)
 
+![Image of hero header from this post](https://github.com/romuloreis/DWDM/blob/master/assets/hero-head-saudenoprato.png)
+Hero header que será desenvolvido por nós.
+
 Nessa etapa, vamos construir a primeira parte da nossa one-page web.  Para saber mais sobre HERO HEADER, você pode acessar esse material:
 
    - [Dicas e ideias para construir hero headers.](https://cssanimation.rocks/build-hero-header/) 
