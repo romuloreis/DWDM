@@ -18,7 +18,7 @@ Botão 2: Mais Informações.
 
 
 ## Seção 1: Features (recursos, características, funcionalidades)
-Título: Solução rápida e saúdavel — não apenas solução rápida.
+Título: Solução rápida e saúdavel — não apenas rápida.
 
 Nós da saúde no prato queremos prover a você uma experiência incrivelmente deliciosa e saudável. Pois entendemos que nem todo mundo tem tempo suficiente ou interesse em cozinhar, mas não é por isso que as pessoas devem deixar de se alimentar bem.
 
@@ -30,7 +30,7 @@ Pronto em 15 min
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.
 
-100% organico
+100% orgânico
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.
 
