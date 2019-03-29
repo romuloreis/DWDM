@@ -14,5 +14,5 @@ Lembre-se de manter a documentação sempre atualizada e aproveite essa oportuni
   - [Hero Header](https://github.com/romuloreis/DWDM/blob/master/segunda-etapa.md) (Segunda Etapa)
   - [Documentação versão 2](https://github.com/romuloreis/DWDM/blob/master/documento%202.md)
   - [Features](https://github.com/romuloreis/DWDM/blob/master/terceira-etapa.md) (Terceira Etapa)
-  - [Documentação versão 3]()
-  - [Galeria de imagens]() (Quarta Etapa)
+  - [Documentação versão 3](https://github.com/romuloreis/DWDM/blob/master/documento%203.md)
+  - [Galeria de imagens](https://github.com/romuloreis/DWDM/blob/master/quarta-etapa.md) (Quarta Etapa)
