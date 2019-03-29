@@ -39,7 +39,7 @@ imagens.
         </ul>
 ```
  
-A tag <figure> (link w3schools) funciona como um container que suporta imagens. Cada lista não ordenada (_ul_) represerará uma 
+A tag _figure_ funciona como um container que suporta imagens. Cada lista não ordenada (_ul_) represerará uma 
 linha e terão 4 itens (_li_) cada. Cada imagem da galeria é/está em um item (_li_) da lista. Lembre-se que o conteúdo do 
 atributo _alt_ e _title_ devem estar de acordo com a sua versão 3 da documentação. O atributo _alt_ é necessária para validação 
 do código da página. O conteúdo desse vai aparecer caso sua imagem não possa ser carregada pelo navegador.
