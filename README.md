@@ -7,6 +7,8 @@ Você deve atuar desde a concepção do projeto até seu lançamento, além diss
 
 Lembre-se de manter a documentação sempre atualizada e aproveite essa oportunidade para estimular sua criatividade, criando conteúdos exclusivos.
 
+Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
+
 ## One-page web
 
   - [Documentação inicial](https://github.com/romuloreis/DWDM/blob/master/documento%201.md) 
@@ -16,3 +18,5 @@ Lembre-se de manter a documentação sempre atualizada e aproveite essa oportuni
   - [Features](https://github.com/romuloreis/DWDM/blob/master/terceira-etapa.md) (Terceira Etapa)
   - [Documentação versão 3](https://github.com/romuloreis/DWDM/blob/master/documento%203.md)
   - [Galeria de imagens](https://github.com/romuloreis/DWDM/blob/master/quarta-etapa.md) (Quarta Etapa)
+  - [Documentação versão 4](#)
+  - [Lista de passos](#) (Quinta Etapa)
