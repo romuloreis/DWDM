@@ -105,7 +105,7 @@ Agora vamos colocar o conteúdo em cada coluna.
 
 ## Ícones
 
-Precisamos encontrar um ícone que melhor represente cada feature. Há varios sites que disponibilizam icones sob diferentes licenças. Para esse projeto vou utilizar os ícones disponibilizados no [ionicons.com](https://ionicons.com/). Para poder usá-los, basta incluir a linha de código abaixo no final do documento HTML, logo após o fechamento da tag HTML.
+Precisamos encontrar um ícone que melhor represente cada feature. Há varios sites que disponibilizam icones sob diferentes licenças. Uma opção é o [fontawesome](https://fontawesome.com/) Para esse projeto vou utilizar os ícones disponibilizados no [ionicons.com](https://ionicons.com/). Para poder usá-los, basta incluir a linha de código abaixo no final do documento HTML, logo após o fechamento da tag HTML.
 
 ```html
     <!--todo o código da minha página está acima-->
