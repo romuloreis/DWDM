@@ -41,11 +41,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat m
 ## Seção 2: Galeria de imagem 
 Título: 
 
-  - Pizza Vegana
-  - Ovos mexidos com cogumelos
-  - Panqueca de banana com pasta de amendoim
-  - Vitamina de frutas com aveia
-  - Salmão grelhado com molho de limão
-  - Quinoa com legumes, homus e pão pita
-  - Salada árabe
-  - Frango com legumes
+  1. Pizza Vegana
+  2. Ovos mexidos com cogumelos
+  3. Panqueca de banana com pasta de amendoim
+  4. Vitamina de frutas com aveia
+  5. Salmão grelhado com molho de limão
+  6. Quinoa com legumes, homus e pão pita
+  7. Salada árabe
+  8. Frango com legumes
