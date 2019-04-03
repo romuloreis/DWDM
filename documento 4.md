@@ -51,7 +51,7 @@ Título:
   8. Frango com legumes
   
 ## Seção 3: Lista de passos
-Título: Esperando o quê? - Basta 3 passos
+Título: Esperando o quê? - Bastam 3 passos
 
   1. Selecione qual plano melhor se encaixa no seu bolso!
   2. Escolha uma refeição deliciosa e super saúdavel!
