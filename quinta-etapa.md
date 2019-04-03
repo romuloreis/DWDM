@@ -109,3 +109,9 @@ Basta incluir os botões de download dos aplicativos para Android e iOS, após o
       <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Botão Play Store"></a>
   </div>
 ```
+
+Agora, se abrirmos nossa página, vamos verificar que o conteúdo esta lá, porém, de uma forma não muito atrativa.
+
+## Estilizando nossa seção com CSS
+
+
