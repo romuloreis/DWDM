@@ -30,7 +30,7 @@ Agora vamos criar uma _div_ com a classe _row_ dentro da seção (_section-steps
       <div class="row">
         
         <!--Título da seção -->
-        <h2>Esperando o quê? &mdash Bastam 3 passos</h2>
+        <h2>Esperando o quê? &mdash; Bastam 3 passos</h2>
       
       <!--Fechando a div ROW -->
       </div>
@@ -46,7 +46,7 @@ Após incluir o título da seção, vamos incluir um novo container (_row_) abai
     <section class="section-steps">
       <!--Container com o título da seção -->
       <div class="row">
-        <h2>Esperando o quê? &mdash Bastam 3 passos</h2>
+        <h2>Esperando o quê? &mdash; Bastam 3 passos</h2>
       </div>
 
       <!-- Abrindo a div com a classe ROW para criar um container centralizado,
@@ -62,7 +62,7 @@ Após incluir o título da seção, vamos incluir um novo container (_row_) abai
       
     </section>
 ```
-Após a criação do container (_row_) com as duas colunas (_col_ _span-1-of-2_), vamos colocar o conteúdo de cada uma das colunas. Na Coluna da esquerda, vamos adicionar a imagem de um smartphone rodando o aplicativo do Saúde no Prato, utilizando a tag _img_, vamos criar uma classe para essa tag, chamando ela de _app-screen_.
+Após a criação do container (_row_) com as duas colunas (_col_ _span-1-of-2_ _steps-box_), vamos colocar o conteúdo de cada uma das colunas. Na Coluna da esquerda, vamos adicionar a imagem de um smartphone rodando o aplicativo do Saúde no Prato, utilizando a tag _img_, vamos criar uma classe para essa tag, chamando ela de _app-screen_.
 
 Na coluna da direita, vamos incluir uma _div_ com a classe _step_ (significa "passo", pode usar nomeclatura em português, caso considere mais fácil de entender o conteúdo). Dentro do container _step_, vamos adicionar uma _div_ com o número do passo e logo após um paragráfo com a frase referente a esse passo. 
 
@@ -71,13 +71,13 @@ Neste caso teremos 3 passos, sendo assim, teremos 3 _div_ da classe _step_
 ```html
 <div class="row">
   <!-- Conteúdo da coluna da esquerda -->
-  <div class="col span-1-of-2">
+  <div class="col span-1-of-2 steps-box">
       <!-- Adiciona a imagem da tela de um smarphone com nosso aplicativo aberto -->
       <img src="resources/img/app-screen.png" alt="Seu pedido pelo iPhone" class="app-screen">
   </div>
 
   <!-- Conteúdo da coluna da direita -->
-  <div class="col span-1-of-2">
+  <div class="col span-1-of-2 steps-box">
       <!-- Container com o primeiro passo -->
       <div class="step">
           <div>1</div>
