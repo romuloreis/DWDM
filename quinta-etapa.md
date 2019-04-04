@@ -257,3 +257,44 @@ Aumentanto apenas o espaçamento do ultimo passo. _last-of-type_ tem função si
 }
 ```
 
+## Últimos detalhes - Clearing Floats (limpando os _floats_)
+
+**ADICIONAR FOTO**
+
+Note que o título da seção está muito próximo da galeria de fotos. Isso ocorre por que ...
+
+Se você usar a ferramenta de desenvolvedor do Chrome. Ao inspecionar a página e selecionar a tag html _section_ com a classe _section-steps_ vai poder verificar que essa seção inicia mais em cima, como ilustrado na imagem abaixo. Isso está relacionado ao reset (_clear_) dos _floats_
+Sempre que a gente define algumas propriedades _floats_, precisamos resetar (_clear_) eles.
+
+Ainda usando a ferramenta do desenvolvedor, ao selecionar no código html a seção _section-photos_ poderá notar que a altura (height) está zerada. Isso também foi causado por não termos "resetado" as propriedades _floats_
+
+Para "limpar/resetar" a propriedade _float_ para que não continue afetando os demais elementos da página, nós criamos as seguintes regras no arquivo style.css
+
+
+```css
+.clearfix {
+zoom:1;
+}
+
+/*limpa o float depois de um elemento.*/
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height:0;
+    visibility:hidden;
+}
+```
+
+Agora basta incluir essa classe em cada ocorrência lista (_ul_) da classe _images-showcase_ da seção _section-photos_, conforme demonstrado no código abaixo.
+
+```css
+<section class="section-photos">
+        <ul class="images-showcase clearfix">
+          <!-- muitos códigos aqui -->
+        </ul>
+        <ul class="images-showcase clearfix">
+          <!-- muitos códigos aqui -->
+        </ul>
+</section>
+``` 
