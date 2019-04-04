@@ -5,7 +5,6 @@ Nesta seção iremos informar quais cidades são atendidas pelo Saúde no Prato,
 **Conteúdo que iremos abordar:**
 
   - Revisão do conteúdo abordado até o momento.
-  - Lembrando que ao concluir esse site, vamos ter uma etapa de torna-lo responsivo.
 
 ## Criando a Seção Cidades (_section-cities_)
 
