@@ -60,39 +60,39 @@ Título: Esperando o quê? - Bastam 3 passos
 ## Seção 4: Cidades
 Título: Estamos atendendo nas seguintes cidades
 
-Porto Alegre
+  - Porto Alegre
 
-Av. Ipiranga, 999
+    - Av. Ipiranga, 999
 
-20 opções de pratos
+    - 20 opções de pratos
 
-@saudenoprato_poa
-
-
-Passo Fundo
-
-Av. Brasil, 888
-
-30 opções de pratos
-
-@saudenoprato_pf
+    - @saudenoprato_poa
 
 
-Alegrete
+  - Passo Fundo
 
-Av. Carlos Gomes, 777
+    - Av. Brasil, 888
 
-25 opções de pratos
+    - 30 opções de pratos
 
-@saudenoprato_alg
+    - @saudenoprato_pf
 
 
-São Leopoldo
+  - Alegrete
 
-Rua Das Flores, 666
+    - Av. Carlos Gomes, 777
 
-10 opções de pratos
+    - 25 opções de pratos
 
-@saudenoprato_sl
+    - @saudenoprato_alg
+
+
+  - São Leopoldo
+
+    - Rua Das Flores, 666
+
+    - 10 opções de pratos
+
+    - @saudenoprato_sl
 
   
