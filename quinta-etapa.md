@@ -170,7 +170,7 @@ Mas antes, vamos começar aumentando o espaço entre os containers de passos (_d
 
 ```css
 .step {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 ```
 
@@ -216,4 +216,44 @@ Note que o Número dentro do círculo não está alinhado. Vamos fazer isso agor
 }
 ```
 
-Vamos 
+Vamos migrar a propriedade _margin-top_ da regra _.steps-box_ para a regra _.steps-box:first-child_
+Após essa migração, a regra  _.steps-box_ não será mais necessária, então, já podemos deletar ela.
+
+```css
+/*Deletar essa regra*/
+.steps-box {
+}
+
+.steps-box:first-child {
+    margin-top: 30px;
+    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
+    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+    margin-top: 70px;
+}
+
+```
+
+A última coisa é formatar o tamanho dos botões, ou em outras palavras, a imagem dentro do botão
+
+```css
+.btn-app img {
+    height:50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+```
+
+Aumentanto apenas o espaçamento do ultimo passo. _last-of-type_ tem função similar ao _last-child_, fique a vontade para explorar outras opções.
+
+```css
+.step:last-of-type {
+    margin-bottom: 80px;
+}
+```
+
