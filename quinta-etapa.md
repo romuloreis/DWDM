@@ -264,16 +264,17 @@ Aumentanto apenas o espaçamento do ultimo passo. _last-of-type_ tem função si
 
 ## Últimos detalhes - Clearing Floats (limpando os _floats_)
 
-**ADICIONAR FOTO**
-
 Note que o título da seção está muito próximo da galeria de fotos.
 Se você usar a ferramenta de desenvolvedor do Chrome. Ao inspecionar a página e selecionar a tag html _section_ com a classe _section-steps_ vai poder verificar que essa seção inicia mais em cima, como ilustrado na imagem abaixo. Isso está relacionado ao reset (_clear_) dos _floats_
+
+![Image of debug](https://github.com/romuloreis/DWDM/blob/master/assets/quinta-etapa-debug.png)
+Imagem ilustrando o "bug".
+
 Sempre que a gente define algumas propriedades _floats_, precisamos resetar (_clear_) eles.
 
 Ainda usando a ferramenta do desenvolvedor, ao selecionar no código html a seção _section-photos_ poderá notar que a altura (height) está zerada. Isso também foi causado por não termos "resetado" as propriedades _floats_
 
 Para "limpar/resetar" a propriedade _float_ para que não continue afetando os demais elementos da página, nós vamos usar a solução mais conhecida dos profissionais de front-end, a classe "clearfix". Para isso, nós vamos criar as seguintes regras no arquivo style.css:
-
 
 ```css
 .clearfix {
