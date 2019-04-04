@@ -40,7 +40,12 @@ Agora vamos criar uma _div_ com a classe _row_ dentro da seção (_section-steps
 
 ## Conteúdo da Seção
 
-Após incluir o título da seção, vamos incluir um novo container (_row_) abaixo do container do título. Pois abaixo do título teremos uma linha com duas colunas. Na coluna da esquerda teremos uma imagem e na coluna da direita teremos a descrição dos passos para adquirir o produto ou serviço. Como teremos 2 colunas, o nome da classe dessas colunas deve ser _col_ _span-1-of-2_
+Após incluir o título da seção, vamos incluir um novo container (_row_) abaixo do container do título. Pois abaixo do título teremos uma linha com duas colunas. Na coluna da esquerda teremos uma imagem e na coluna da direita teremos a descrição dos passos para adquirir o produto ou serviço. Como teremos 2 colunas, o nome da classe dessas colunas deve ser _col_ _span-1-of-2_ _steps-box_
+
+  - _col_ para indicar que a div é uma coluna
+  - _span-1-of-2_ para indicar que é uma coluna de duas
+  - _steps-box_ para indicar que é nossa "caixa" de passos, mais para fins de estilo
+
 
 ```html
     <section class="section-steps">
@@ -52,10 +57,10 @@ Após incluir o título da seção, vamos incluir um novo container (_row_) abai
       <!-- Abrindo a div com a classe ROW para criar um container centralizado,
             será usando para colocar 2 colunas  -->
       <div class="row">
-          <div class="col span-1-of-2">
+          <div class="col span-1-of-2 steps-box">
               <!-- Conteúdo da coluna da esquerda -->
           </div>
-          <div class="col span-1-of-2">
+          <div class="col span-1-of-2 steps-box">
               <!-- Conteúdo da coluna da direita -->
           </div>
       </div>
