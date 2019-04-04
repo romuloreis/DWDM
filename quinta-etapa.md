@@ -288,6 +288,9 @@ zoom:1;
 
 Agora basta incluir essa classe em cada ocorrência lista (_ul_) da classe _images-showcase_ da seção _section-photos_, conforme demonstrado no código abaixo.
 
+Vamos colocar a classe _clearfix_ na lista (_ul_), pois seus elementos filhos (_li_) são os elementos que têm a propriedade _float_ 
+Então dizemos que a classe pai tem a proriedade float "limpa" logo após a tag do pai, por causa do pseudo elemento ::after.
+
 ```css
 <section class="section-photos">
         <ul class="images-showcase clearfix">
