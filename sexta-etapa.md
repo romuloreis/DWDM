@@ -7,6 +7,8 @@ Imagem de como é a seção cidades da nossa página.
 
 Nesta seção iremos informar quais cidades são atendidas pelo Saúde no Prato, juntamente com o endereço do restaurante, a quantidade de opçoes de pratos disponíveis no menu e o link para a conta do Twitter/instagram/fanpage do restaurante da cidade.
 
+**O ESTILO DESSA PÁGINA SERÁ DESENVOLVIDO POR VOCÊ**
+
 **Conteúdo que iremos abordar:**
 
   - Revisão do conteúdo abordado até o momento.
