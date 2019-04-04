@@ -119,12 +119,17 @@ Agora, se abrirmos nossa página, vamos verificar que o conteúdo esta lá, por�
 
 ## Estilizando nossa seção com CSS
 
-No arquivo style.css vamos adicionar uma regra para criar uma margem entre o topo dos containers e o elemento h2
+No arquivo style.css vamos definir uma cor de fundo para essa seção e depois adicionar uma regra para criar uma margem entre o topo dos containers e o elemento h2
 
 ```css
 /* ----------------------------------------------- */
 /* Seção Lista de Passos (Section Steps) */
 /* ----------------------------------------------- */
+
+/*Definindo cor de fundo para essa seção*/
+.section-steps {
+    background-color: #f4f4f4;
+}
 
 /*Regra para ambos os boxes/containers*/
 .steps-box {
@@ -261,14 +266,13 @@ Aumentanto apenas o espaçamento do ultimo passo. _last-of-type_ tem função si
 
 **ADICIONAR FOTO**
 
-Note que o título da seção está muito próximo da galeria de fotos. Isso ocorre por que ...
-
+Note que o título da seção está muito próximo da galeria de fotos.
 Se você usar a ferramenta de desenvolvedor do Chrome. Ao inspecionar a página e selecionar a tag html _section_ com a classe _section-steps_ vai poder verificar que essa seção inicia mais em cima, como ilustrado na imagem abaixo. Isso está relacionado ao reset (_clear_) dos _floats_
 Sempre que a gente define algumas propriedades _floats_, precisamos resetar (_clear_) eles.
 
 Ainda usando a ferramenta do desenvolvedor, ao selecionar no código html a seção _section-photos_ poderá notar que a altura (height) está zerada. Isso também foi causado por não termos "resetado" as propriedades _floats_
 
-Para "limpar/resetar" a propriedade _float_ para que não continue afetando os demais elementos da página, nós criamos as seguintes regras no arquivo style.css
+Para "limpar/resetar" a propriedade _float_ para que não continue afetando os demais elementos da página, nós vamos usar a solução mais conhecida dos profissionais de front-end, a classe "clearfix". Para isso, nós vamos criar as seguintes regras no arquivo style.css:
 
 
 ```css
@@ -286,6 +290,8 @@ zoom:1;
 }
 ```
 
+> Se analizarmos, vamos perceber que essa classe cria um elemento invisivel do tipo _block_ após a tag alvo (elemento html em que a classe foi atribuida).
+
 Agora basta incluir essa classe em cada ocorrência lista (_ul_) da classe _images-showcase_ da seção _section-photos_, conforme demonstrado no código abaixo.
 
 Vamos colocar a classe _clearfix_ na lista (_ul_), pois seus elementos filhos (_li_) são os elementos que têm a propriedade _float_ 
@@ -301,3 +307,5 @@ Então dizemos que a classe pai tem a proriedade float "limpa" logo após a tag 
         </ul>
 </section>
 ``` 
+
+Verifique se funcionou. Em caso de dúvidas, não hesite em pedir ajuda ao professor.
