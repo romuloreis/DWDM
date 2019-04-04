@@ -1,22 +1,21 @@
-# Página Lista de Passos
+# Página Cidades
 
-Nesta seção iremos apresentar os passos necessários para adquirir o produto ou serviço fornecido pelo nosso cleinte.
+Nesta seção iremos informar quais cidades são atendidas pelo Saúde no Prato, juntamente com o endereço do restaurante, a quantidade de opçoes de pratos disponíveis no menu e o link para a conta do Twitter/instagram/fanpage do restaurante da cidade.
 
 **Conteúdo que iremos abordar:**
 
-  - Desenhando circulos apenas com CSS
-  - Técnica para separação de seções
-  - Como encorporar botões do App Store (iPhone) e Play Store (Android)
+  - Revisão do conteúdo abordado até o momento.
+  - Lembrando que ao concluir esse site, vamos ter uma etapa de torna-lo responsivo.
 
-## Criando a Seção Steps (_section-steps_)
+## Criando a Seção Cidades (_section-cities_)
 
-Primeiramente vamos criar uma nova seção com a classe (_section-steps_), logo após a seção _section-photos_ 
+Primeiramente vamos criar uma nova seção com a classe (_section-cities_), logo após a seção _section-steps_ 
 
 ```html
-    <!--Abrindo a seção steps (passos) -->
-    <section class="section-steps">
+    <!--Abrindo a seção cidades -->
+    <section class="section-cities">
 
-    <!--Fechando a seção steps (passos) -->
+    <!--Fechando a seção cidades -->
     </section>
 ```
 
@@ -30,13 +29,8 @@ No arquivo style.css vamos definir uma cor de fundo para essa seção e depois a
 /* ----------------------------------------------- */
 
 /*Definindo cor de fundo para essa seção*/
-.section-steps {
+.section-cities {
     background-color: #f4f4f4;
-}
-
-/*Regra para ambos os boxes/containers*/
-.steps-box {
-    margin-top: 30px; /*Margem entre ambos os boxes e o h2*/
 }
 ```
 
