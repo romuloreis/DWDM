@@ -72,7 +72,7 @@ Após inserir o título da seção na primeira _div_ da classe _row_, nós vamos
 ```
 
 
-Dentro de cada coluna, iremos adicionar uma imagem (_img_), um título (h3) com o nome da cidade e um container _div_ com a classe _city-feature_ para cada feature/característica/função daquela cidade. Dentro dessa _div_ _city-feature_, haverá um ícone e um texto.
+Dentro de cada coluna, iremos adicionar uma imagem (_img_), um título (h3) com o nome da cidade e um container _div_ com a classe _city-feature_ para cada feature/característica/função daquela cidade. Dentro dessa _div_ _city-feature_, haverá um ícone e um texto. Abaixo está o trecho de código de uma das colunas.
 
 ```html
             <div class="col span-1-of-4 box">
