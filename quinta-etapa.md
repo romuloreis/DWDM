@@ -119,4 +119,101 @@ Agora, se abrirmos nossa página, vamos verificar que o conteúdo esta lá, por�
 
 ## Estilizando nossa seção com CSS
 
+No arquivo style.css vamos adicionar uma regra para criar uma margem entre o topo dos containers e o elemento h2
 
+```css
+/* ----------------------------------------------- */
+/* Seção Lista de Passos (Section Steps) */
+/* ----------------------------------------------- */
+
+/*Regra para ambos os boxes/containers*/
+.steps-box {
+    margin-top: 30px; /*Margem entre ambos os boxes e o h2*/
+}
+```
+
+Digamos que eu queira pegar apenas a primeira ocorrencia de uma classe, ou pegar elementos de forma individualizada. Posso fazer isso usando first-child, last-child, entre outras.
+
+Vamos começar criando uma regra para pegar a primeira ocorrêcnia (_first-child_) do elemento com a classe _steps-box_
+
+```css
+/*Regra para selecionar apenas o primeiro box/container, neste caso será o da esquerda*/
+/*Nota: First significa Primeiro*/
+.steps-box:first-child {
+    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
+    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+}
+```
+Agora vamos criar uma regra para pegar a última ocorrêcnia (_last-child_) do elemento com a classe _steps-box_
+
+```css
+/*Regra para selecionar apenas o último box/container, neste caso será o da direita*/
+/*Nota: Last significa Último*/
+.steps-box:last-child {
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+}
+```
+
+Agora vamos definir um tamanho para a imagem principal desta seção
+
+```css
+/*Definindo o tamanho da imagem do container da esquerda*/
+.app-screen {
+    width: 40%; /*40% do tamanho do box/container*/
+}
+```
+
+Sempre que modificar o código, salve e abra a página no navegador, para acompanhar as alterações.
+Agora vamos ajustar o número dos passos. Eles devem ficar dentro de um container, que terá formato circular e estarem à esquerda da frase correspondente ao passo. 
+
+Mas antes, vamos começar aumentando o espaço entre os containers de passos (_div_ _step_). 
+
+```css
+.step {
+    margin-bottom: 15px;
+}
+```
+
+Agora vamos criar uma regra para o elemento div dentro da classe step. Definir uma cor para a fonte, borda e definir o container como inline-block para não ocupar toda a largura da tela, permitindo outros elementos ao lado.
+
+```css
+/*Vamos criar uma regra para o elemento div dentro da classe step*/
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+}
+```
+
+Hora de arredondarmos as bordas, definir altura e largura do container.
+
+```css
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+    border-radius: 50%; /*Arredonda as bordas*/
+    height: 55px;/*Define altura*/
+    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+}
+```
+Note que o Número dentro do círculo não está alinhado. Vamos fazer isso agora.
+
+```css
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+    border-radius: 50%; /*Arredonda as bordas*/
+    height: 55px;/*Define altura*/
+    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+    /*Ajustando o texto interno*/
+    text-align: center;/*Texto centralizado na horizontal, não na vertical*/
+    padding: 5px;/*espaço entre texto e borda do container*/
+    float: left;
+    font-size: 150%;
+    margin-right: 30px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+}
+```
+
+Vamos 
