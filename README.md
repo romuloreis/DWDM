@@ -9,6 +9,11 @@ Lembre-se de manter a documentação sempre atualizada e aproveite essa oportuni
 
 Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
 
+## Links úteis
+  - Editor de imagens online: [iloveimg](https://www.iloveimg.com/)
+  - Ícones: [fontawesome](https://fontawesome.com/), [ionicons](https://ionicons.com/)
+  - Banco de Imagens: [unsplash](https://unsplash.com/)
+
 ## One-page web
 
   - [Documentação inicial](https://github.com/romuloreis/DWDM/blob/master/documento%201.md) 
