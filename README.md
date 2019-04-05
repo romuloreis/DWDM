@@ -13,6 +13,7 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   - Editor de imagens online: [iloveimg](https://www.iloveimg.com/)
   - Ícones: [fontawesome](https://fontawesome.com/), [ionicons](https://ionicons.com/)
   - Banco de Imagens: [unsplash](https://unsplash.com/)
+  - Fontes: [Google Fonts](https://fonts.google.com/)
 
 ## One-page web
 
