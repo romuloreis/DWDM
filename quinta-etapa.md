@@ -121,6 +121,13 @@ Agora, se abrirmos nossa página, vamos verificar que o conteúdo esta lá, por�
 
 ## Estilizando nossa seção com CSS
 
+Relembrando 
+
+> inline-block é a junção dos comportamentos inline (ex.:ocupar apenas o espaço do conteúdo, não quebrar linha) 
+> e block (ex.: dimensões configuráveis) em um único elemento HTML
+> float faz com que o elemento flutue na direção especificada acima dos outros elementos HTML.
+> Eles podem ser parecidos porque o float adiciona algumas características que o inline-blocktambém possui, mas não todas.
+
 No arquivo style.css vamos definir uma cor de fundo para essa seção e depois adicionar uma regra para criar uma margem entre o topo dos containers e o elemento h2
 
 ```css
