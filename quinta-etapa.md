@@ -4,6 +4,9 @@ Nesta seção iremos apresentar os passos necessários para adquirir o produto o
 
 Antes de qualquer coisa, você pode baixar esses botões do [Google Play](https://github.com/romuloreis/DWDM/blob/master/assets/download-app-android.png) e [Apple Store](https://github.com/romuloreis/DWDM/blob/master/assets/download-app.svg). 
 
+![Image of list_steps from this post](https://github.com/romuloreis/DWDM/blob/master/assets/list_of_features.png?raw=true)
+Página de lista de passos que será desenvolvido por nós.
+
 **Conteúdo que iremos abordar:**
 
   - Desenhando circulos apenas com CSS
