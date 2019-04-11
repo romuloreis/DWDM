@@ -30,6 +30,8 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   - [Cidades Atendidas](https://github.com/romuloreis/DWDM/blob/master/sexta-etapa.md) (Sexta Etapa)
   - [Documentação versão 6](https://github.com/romuloreis/DWDM/blob/master/documento%206.md)
   - [Depoimentos](https://github.com/romuloreis/DWDM/blob/master/setima-etapa.md)(Sétima Etapa)
+  - [Documentação versão 7](https://github.com/romuloreis/DWDM/blob/master/documento%207.md)
+  - [Rodapé](https://github.com/romuloreis/DWDM/blob/master/oitava-etapa.md)(Oitava Etapa)
 
 ## Horários de monitoria HTML5 + CSS
 
