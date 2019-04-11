@@ -242,7 +242,8 @@ Para usar caracteres especiais dentro do valor da propriedade _content_, deve-se
 blockquote::before {
     content: "\201C";
     font-size: 400%;
+    display: block;
 
 }
 ```
-12
+
