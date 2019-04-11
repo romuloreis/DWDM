@@ -92,3 +92,101 @@ Os elementos (_li_) dessa lista serão links (_a_) e o elemento desses links ser
             </div>
         </div>
 ```
+
+## Estilizando nossa seção com CSS
+
+No arquivo style.css vamos definir uma cor de fundo para essa seção e depois definir os nossos menus de navegação.
+
+```css
+/* ----------------------------------------------- */
+/* Seção Rodapé (Footer) */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+```
+
+Agora basta ajustar os itens da lista para ficarem na mesma linha e com espaçamento entre os itens, mas também que o último item não tenha margem após ele.
+
+```css
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+```
+
+Hora de começarmos a ajustar os efeitos dos links. No primeiro menu de navegação, vamos definir uma transição de cores ao passar com o ponteiro do mouse sobre os itens do menu. Já nos ícones das redes sociais, vamos usar a transição de cores, porém vamos definir uma cor para cada ícone.
+
+```css
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 50%;
+}
+
+.logo-facebook,
+.logo-googleplus,
+.logo-twitter,
+.logo-instagram {
+    transition: color 0.2s;
+}
+
+.logo-facebook:hover {
+    color: #3b5998;
+}
+
+.logo-twitter:hover {
+    color: #00aced;
+}
+
+.logo-googleplus:hover {
+    color: #dd4b39;
+}
+
+.logo-instagram:hover {
+    color: #517fa4;
+}
+```
+
+Última etapa, definir o estilo da nossa frase de rodapé, que pode ser os termos de direito autoral ou endereço da empresa.
+
+```css
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+```
