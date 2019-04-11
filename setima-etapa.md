@@ -116,3 +116,20 @@ Dentro de cada coluna, haverá o texto de depoimento de um cliente, como é uma 
             </div>
         </div>
 ```
+Agora vamos acrescentar a imagem de rosto do autor do depoimento. Então, utilizando o elemento _img_ adicione uma imagem ao lado 
+do nome do autor. Para evitar problemas, procure baixar imagens (ou editar) com o valor de largura e altura iguais, pois vamos 
+transformar essa imagem em um circulo perfeito.
+
+```html
+            <div class="col span-1-of-3 box">
+                <!-- coluna de depoimento -->
+                <blockquote>
+                    Eu estava procurando por uma alimentação saudável e que coubesse no meu bolso e encontrei... 
+                  Saúde no Prato, melhor custo-benefício ever! Muito mais que alvace, eles tem rúcula e 
+                  repolho também!
+                    <cite>
+                        <img src="resources/img/customer-3.jpg"/>Pedro Antunes
+                    </cite>
+                </blockquote>
+            </div>
+```
