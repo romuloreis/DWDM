@@ -2,7 +2,7 @@
 
 Nesta seção iremos apresentar os passos necessários para adquirir o produto ou serviço fornecido pelo nosso cliente.
 
-Antes de qualquer coisa, você pode baixar esses botões do [Google Play](https://github.com/romuloreis/DWDM/blob/master/assets/pt-br-play-badge-border.png) e [Apple Store](https://github.com/romuloreis/DWDM/blob/master/assets/disponivel-na-app-store-botao-1.png). 
+Antes de qualquer coisa, você pode baixar esses botões do [Google Play](https://github.com/romuloreis/DWDM/blob/master/assets/download-app-android.png) e [Apple Store](https://github.com/romuloreis/DWDM/blob/master/assets/download-app.svg). 
 
 **Conteúdo que iremos abordar:**
 
