@@ -118,7 +118,7 @@ Dentro de cada coluna, haverá o texto de depoimento de um cliente, como é uma 
 ```
 Agora vamos acrescentar a imagem de rosto do autor do depoimento. Então, utilizando o elemento _img_ adicione uma imagem ao lado 
 do nome do autor. Para evitar problemas, procure baixar imagens (ou editar) com o valor de largura e altura iguais, pois vamos 
-transformar essa imagem em um circulo perfeito.
+transformar essa imagem em um circulo perfeito. Não esqueça que essas imagens devem ser copiadas para o diretório /resources/img/
 
 ```html
             <div class="col span-1-of-3 box">
@@ -132,4 +132,34 @@ transformar essa imagem em um circulo perfeito.
                     </cite>
                 </blockquote>
             </div>
+```
+
+## Hora de definirmos o estilo desta seção.
+
+Antes de modificarmos nossa folha de estilo, vamos baixar uma imagem BEM GRANDE para utilizarmos como plano de fundo deesta seção. Por se tratar de uma imagem de plano de fundo, o arquivo desta imagem deve ser copiada para o diretório /resources/css/img/
+
+Após baixar uma foto linda, maravilhosa e BEM GRANDE, abra o arquivo style.css no seu editor de texto ou IDE preferido. Vamos criar uma regra de css para adicionar uma imagem de fundo nesta seção. 
+
+```css
+/* ----------------------------------------------- */
+/* Seção Testemunhos (Section Testimonials) */
+/* ----------------------------------------------- */
+
+/*Adicionando imagem de fundo na seção*/
+.section-testimonials {
+    background-image: url(img/background-customers.jpg);
+    background-size: cover; /*preencher toda a largura da janela do navegador*/
+}
+```
+
+Como você deve ter percebido, a imagem está muito clara... A seção está uma confusão por causa desse fundo chamativo. Vamos usar a mesma técnica utilizada no Hero Header. Já vamos aproveitar para modificar a cor da fonte do texto para branco, afinal o fundo ficará escuro.
+
+
+```css
+/*Adicionando imagem de fundo na seção*/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/background-customers.jpg);
+    background-size: cover; /*preencher toda a largura da janela do navegador*/
+    color: #fff; /*cor da fonte*/
+}
 ```
