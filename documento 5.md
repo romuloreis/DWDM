@@ -41,14 +41,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat m
 ## Seção 2: Galeria de imagem 
 Título: 
 
-  1. Pizza Vegana [baixar]() [fonte](http://www.paraibaradioblog.com/wp-content/uploads/2018/05/Comprovante001-57.jpg)
-  2. Ovos mexidos com cogumelos [baixar]() [fonte](https://cdn.teleculinaria.pt/wp-content/uploads/2015/04/Ovos-mexidos-com-espargos-cogumelos-e-lingui%C3%A7a-5.jpg)
-  3. Panqueca de banana com pasta de amendoim [baixar]() [fonte](https://abrilboaforma.files.wordpress.com/2017/08/panqueca-banana.jpg)
-  4. Vitamina de frutas com aveia [baixar]() [fonte](https://2.bp.blogspot.com/-oCddMzsbEIQ/VfMbiAilg2I/AAAAAAAADos/mMX40wMmHR0/s1600/suco_melao.jpg)
-  5. Salmão grelhado com molho de limão [baixar]() [fonte](https://i.pinimg.com/originals/6b/4e/06/6b4e06950a621d73035e06b93cc3da6c.jpg)
-  6. Quinoa com legumes, homus e pão pita [baixar]() [fonte](https://portal-amb-imgs.clubedaana.com.br/2016/11/homus-1920x1080.jpg)
-  7. Salada árabe [baixar]() [fonte](https://craftlog.com/m/i/1584064=s1280=h960)
-  8. Frango com legumes [baixar]() [fonte](http://painel.perdigao.com.br/panel/sites/default/files/styles/is_product_cover_1240_858/public/recipes-images/salada-morna-frango.png?itok=FKzfTcZ3)
+  1. Pizza Vegana - [fonte](http://www.paraibaradioblog.com/wp-content/uploads/2018/05/Comprovante001-57.jpg)
+  2. Ovos mexidos com cogumelos - [fonte](https://cdn.teleculinaria.pt/wp-content/uploads/2015/04/Ovos-mexidos-com-espargos-cogumelos-e-lingui%C3%A7a-5.jpg)
+  3. Panqueca de banana com pasta de amendoim - [fonte](https://abrilboaforma.files.wordpress.com/2017/08/panqueca-banana.jpg)
+  4. Vitamina de frutas com aveia - [fonte](https://2.bp.blogspot.com/-oCddMzsbEIQ/VfMbiAilg2I/AAAAAAAADos/mMX40wMmHR0/s1600/suco_melao.jpg)
+  5. Salmão grelhado com molho de limão - [fonte](https://i.pinimg.com/originals/6b/4e/06/6b4e06950a621d73035e06b93cc3da6c.jpg)
+  6. Quinoa com legumes, homus e pão pita - [fonte](https://portal-amb-imgs.clubedaana.com.br/2016/11/homus-1920x1080.jpg)
+  7. Salada árabe - [fonte](https://craftlog.com/m/i/1584064=s1280=h960)
+  8. Frango com legumes - [fonte](http://painel.perdigao.com.br/panel/sites/default/files/styles/is_product_cover_1240_858/public/recipes-images/salada-morna-frango.png?itok=FKzfTcZ3)
+  
+  > [Clique aqui para baixar os arquivos de imagem](https://github.com/romuloreis/DWDM/raw/master/assets/imagens_galeria.zip)
   
 ## Seção 3: Lista de passos
 Título: Esperando o quê? - Bastam 3 passos
