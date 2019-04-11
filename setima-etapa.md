@@ -9,6 +9,7 @@ Imagem de como é a seção depoimentos da nossa página.
 **Conteúdo que iremos abordar:**
 
   - Revisão do conteúdo abordado até o momento.
+  - Revisar as tags _blockquote_, _cite_
 
 ## Criando a Seção Testemunho (_section-testimonials_)
 
@@ -67,6 +68,51 @@ regra/seletor em CSS, que impacte apenas nas colunas desta seção.
             </div>
             <div class="col span-1-of-3 box">
                <!--Terceira coluna -->
+            </div>
+        </div>
+```
+
+Dentro de cada coluna, haverá o texto de depoimento de um cliente, como é uma citação direta (exatamente o que alguém falou), nós devemos por esse texto dentro da tag _blockquote_ e ainda dentro deste, usar a tag _cite_ para citar a autor/fonte do texto.
+
+  > O Elemento HTML [*_blockquote_*](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote) (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo). A URL para a fonte da citação pode ser dada usando o ATRIBUTO cite, enquanto uma representação de texto da fonte pode ser dada usando o ELEMENTO *_cite_*.
+  
+  > O elemento HTML [*_cite_*](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite) representa uma referência a um trabalho artístico. Deve incluir o título do trabalho ou uma URL de referência, que pode ser em uma forma abreviada de acordo com as convenções usadas para a adição dos metadados de citação.
+
+
+```html
+<div class="row">
+            <!-- Aqui irá o conteúdo da segunda div, organizado em 3 colunas -->
+            <div class="col span-1-of-3 box">
+                <!--Primeira coluna -->
+                <blockquote>
+                    Saúde no prato é incrível! Eu sou uma pessoa super ocupada, com pouco tempo para cuidar da 
+                  minha alimentação, mas tudo mudou com a equipe da saúde no prato que assumiu essa função.
+                    <cite>
+                        Alberto Saltonetto
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3 box">
+                <!--Segunda coluna -->
+                <blockquote>
+                    Comida saúdavel rapidinho na porta da sua casa! A melhor opção para mim e para vc... 
+                  principalmente para mim que odeio cozinhar e que já perdi três casas após incendia-las 
+                  tentando cozinhar.
+                    <cite>
+                        Joicelaine Carneiro
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3 box">
+                <!--Terceira coluna -->
+                <blockquote>
+                    Eu estava procurando por uma alimentação saudável e que coubesse no meu bolso e encontrei... 
+                  Saúde no Prato, melhor custo-benefício ever! Muito mais que alvace, eles tem rúcula e 
+                  repolho também!
+                    <cite>
+                        Pedro Antunes
+                    </cite>
+                </blockquote>
             </div>
         </div>
 ```
