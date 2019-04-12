@@ -68,7 +68,7 @@ Agora basta criar uma lista não ordenada (_ul_) na primeira coluna, vamos atrib
         </div>
 ```
 
-Na segunda _div_ da classe _col_ _span-1-of-1_ também vamos criar uma lista não ordenada (_ul_), atribuindo a classe _social-links_
+Na segunda _div_ da classe _col_ _span-1-of-2_ também vamos criar uma lista não ordenada (_ul_), atribuindo a classe _social-links_
 Os elementos (_li_) dessa lista serão links (_a_) e o elemento desses links serão ícones. Caso você opte por utilizar ícones do [ionicons](https://ionicons.com/) usando a importação dos ícones pela tag _script_ no final do documento HTML, assim como foi feito aqui, vamos precisar criar um ícone para essas ícones. A classe desses ícones será utilizada posteriormente.
 
 ```html
