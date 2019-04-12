@@ -93,6 +93,14 @@ Os elementos (_li_) dessa lista serão links (_a_) e o elemento desses links ser
         </div>
 ```
 
+Antes de começar a definir o estilo do rodapé, vamos adicionar uma frase no segundo container _div_ de classe _row_
+
+```html
+        <div class="row">
+            <p>Copyright &copy; 2019 - Saúde no Prato. Todos os direitos reservados.</p>
+       </div>
+```
+
 ## Estilizando nossa seção com CSS
 
 No arquivo style.css vamos definir uma cor de fundo para essa seção e depois definir os nossos menus de navegação.
