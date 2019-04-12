@@ -26,14 +26,14 @@ Agora vamos organizar a estrutura do rodapé. Teremos duas _div_ da classe _row_
 (não é uma dentro da outra), conforme ilustrado no trecho de código abaixo.
 
 ```html
-    <section class="section-testimonials">
+      <footer>
         <div class="row">
             <!-- Aqui irá nossos dois menus de navegação -->
         </div>
         <div class="row">
             <!-- Aqui irá uma mensagem de copyright ou endereço da empresa -->
         </div>
-    </section>
+      </footer>
 ```
 
 Na primeira _div_ da classe _row_ vamos inserir dois menus (_nav_), note pela imagem ilustrativa deste post, que os menus de navegaçao estão organizados em duas colunas, sendo assim, vamos atribuir a classe _col_ _span-1-of-2_ aos containers (_div_).
