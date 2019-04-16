@@ -11,7 +11,7 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
 
 ## Links úteis
   - Editor de imagens online: [iloveimg](https://www.iloveimg.com/)
-  - Ícones: [fontawesome](https://fontawesome.com/), [ionicons](https://ionicons.com/)
+  - Ícones: [flaticon](https://www.flaticon.com/), [fontawesome](https://fontawesome.com/), [ionicons](https://ionicons.com/)
   - Banco de Imagens: [unsplash](https://unsplash.com/), [burst](https://pt.shopify.com/burst/imagens-sem-direitos-autorais)
   - Fontes: [Google Fonts](https://fonts.google.com/)
 
