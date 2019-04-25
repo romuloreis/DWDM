@@ -1,13 +1,3 @@
-Notas
-
-Atualmente nossa página está _top_ em telas de computadores...
-
-mas também queremos que funcione em telas de outros dispositivos... telas com diferentes tamanhos e formatos...
-
-*Lembrando que criamos todo o site usando Fluid Grid.
-
-*Add screenshot de como as páginas vão ficar!
-
 
 ![Image of media_queries_blog](https://github.com/romuloreis/DWDM/blob/master/assets/media-queries-blog.jpg)
 Crédito da foto: [solodev.com](https://www.solodev.com/core/fileparse.php/131/urlt/media-queries-blog.jpg)
@@ -28,6 +18,17 @@ Menos didáticos
 - [Recomendo a leitura](http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/)
 - [Introduction mobile first media queries](https://www.sitepoint.com/introduction-mobile-first-media-queries/)
 
+
+
+Notas
+
+Atualmente nossa página está _top_ em telas de computadores...
+
+mas também queremos que funcione em telas de outros dispositivos... telas com diferentes tamanhos e formatos...
+
+*Lembrando que criamos todo o site usando Fluid Grid.
+
+*Add screenshot de como as páginas vão ficar!
 Revisão de tudo: 
 https://www.w3schools.com/css/css_rwd_intro.asp
 
