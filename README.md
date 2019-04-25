@@ -32,6 +32,8 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   - [Depoimentos](https://github.com/romuloreis/DWDM/blob/master/setima-etapa.md)(Sétima Etapa)
   - [Documentação versão 7](https://github.com/romuloreis/DWDM/blob/master/documento%207.md)
   - [Rodapé](https://github.com/romuloreis/DWDM/blob/master/oitava-etapa.md)(Oitava Etapa)
+  
+  - [Lista de materiais Media Queries](https://github.com/romuloreis/DWDM/blob/master/materialmedias.md)
 
 ## Horários de monitoria HTML5 + CSS
 
