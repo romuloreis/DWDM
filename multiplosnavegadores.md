@@ -10,3 +10,10 @@ css browsers previxies
 
 
 Geradores online e plugins!
+
+https://www.jsdelivr.com/
+
+https://www.jsdelivr.com/package/npm/respond.js?path=cross-domain
+
+
+<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script>
