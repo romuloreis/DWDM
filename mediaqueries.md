@@ -194,7 +194,97 @@ Na seção lista de passos, vamos ter o objetivo de minimizar o espaço em branc
 }
 ```
 
+**Seção Cidades atendidas**
 
+Primeiramente, vamos reduzir o espaçamento entre os ícones e seus textos. Os ícones são da classe _icon-small_
+
+```css
+@media only screen and (max-width: 1023px){
+
+	/*Regras definidas no passo anterior devem permanecer aqui...*/
+	
+	.icon-small{ 
+		width: 20px; 
+		margin-right: 5px;
+	}
+	
+	.city-feature { font-size: 90%; }
+}
+```
+]
+## Seguindo para os Smartphones e pequenos Tablets (max-width: 767px)
+
+Com uma tela desse tamanho, vai aparecer até uma barra de rolagem horizontal, pois temos textos que vão "violar" as bordas. Para resolver esse problema, vamos usar o valor _hidden_ na propriedade _overflow-x_ no seletor _html_ do arquivo style.css
+No nosso caso, essa propriedade também deve estar presente na regra _body_, então vamos estender a regra _html_, incluindo o _body_, como exemplificado abaixo.
+
+Para mais informações sobre essa propriedade, acesse [aqui](https://www.w3schools.com/cssref/css3_pr_overflow-x.asp)
+
+```css
+/*Arquivo style.css*/
+
+html, body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300; 
+    font-size: 20px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden; /*faz sumir a barra de rolagem horizontal*/
+}
+
+```
+
+Resolvido o problema da barra de rolagem horizontal, vamos diminuir o tamanho padrão da fonte para essa faixa de tela.
+Também vamos reduzir o espaçamento entre as seções. Por fim, ajustar o espaçamento lateral (right, left) das linhas (_row_) e o texto de chamada do hero header. Como vamos utilizar o mesmo valor para ambos os seletores, vamos apenas separá-los por vírgula.
+
+```css
+@media only screen and (max-width: 767px){
+	/*Pequenos telefones até pequenos tablets: largura entre 481px e 767px*/
+
+	/*Tela menor, tamanho da fonte menor também!*/
+	body{font-size: 16px;}
+	/*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
+	section {padding: 30px 0;} 
+
+	.row,
+	.hero-text-box {padding: 0 4%;}
+}
+```
+
+Como podemos notar, esse tamanho de tela já não é adequado para um layout com múltiplas colunas (*estou generalizando). 
+Sendo assim, vamos adicionar uma regra para a classe _col_, definindo que cada coluna ocupará 100% da largura da linha (_row_). Ou seja, uma coluna por linha (coluna única)
+
+
+```css
+@media only screen and (max-width: 767px){
+
+	/*Regras definidas no passo anterior devem permanecer aqui...*/
+
+	/*Nesse ponto, vamos definir que as colunas ocuparão a largura máxima da linha (classe row).
+	Ou seja, uma coluna por linha (coluna única)*/
+	.col{ width: 100%; }
+}
+```
+
+
+```css
+@media only screen and (max-width: 767px){
+	/*Pequenos telefones até pequenos tablets: largura entre 481px e 767px*/
+
+	/*Tela menor, tamanho da fonte menor também!*/
+	body{font-size: 16px;}
+	/*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
+	section {padding: 30px 0;} 
+
+	.row,
+	.hero-text-box {padding: 0 4%;}
+
+	/*Nesse ponto, vamos definir que as colunas ocuparão a largura máxima da linha (classe row).
+	Ou seja, uma coluna por linha (coluna única)*/
+	.col{ width: 100%; }
+
+}
+```
 
 ## Material complementar
 
