@@ -266,23 +266,52 @@ Sendo assim, vamos adicionar uma regra para a classe _col_, definindo que cada c
 }
 ```
 
+**Escondendo menu de navegação**
+Vamos fazer um menu para mobile
 
 ```css
 @media only screen and (max-width: 767px){
-	/*Pequenos telefones até pequenos tablets: largura entre 481px e 767px*/
 
-	/*Tela menor, tamanho da fonte menor também!*/
-	body{font-size: 16px;}
-	/*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
-	section {padding: 30px 0;} 
+	/*Regras definidas no passo anterior devem permanecer aqui...*/
 
-	.row,
-	.hero-text-box {padding: 0 4%;}
+	/*Escondendo a barra de navegação (temporariamente)*/
+	.nav-main {display: none;}
+}
+```
 
-	/*Nesse ponto, vamos definir que as colunas ocuparão a largura máxima da linha (classe row).
-	Ou seja, uma coluna por linha (coluna única)*/
-	.col{ width: 100%; }
 
+**Seção features**
+
+O tamanho dos títulos (headings) estão muito grandes para esse tamanho de tela, então vamos definir novos valores para _h1_ e _h2_. Além disso, note que com esse tamanho de tela o texto principal da seção de features ficou com o espaçamento lateral exagerado. Vamos ajustar isso, sobreescrevendo o seletor _.long__copy_ quando a tela tiver esse tamanho.
+
+```css
+@media only screen and (max-width: 767px){
+
+	/*Regras definidas no passo anterior devem permanecer aqui...*/
+
+	h1{ font-size: 180% }
+	h1{ font-size: 150% }
+	
+	.long-copy{
+		width: 100%;
+    	margin-left: 0%;
+	}
+}
+```
+
+
+```css
+@media only screen and (max-width: 767px){
+
+	/*Regras definidas no passo anterior devem permanecer aqui...*/
+
+	h1{ font-size: 180% }
+	h1{ font-size: 150% }
+	
+	.long-copy{
+		width: 100%;
+    	margin-left: 0%;
+	}
 }
 ```
 
