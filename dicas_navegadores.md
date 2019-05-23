@@ -68,10 +68,8 @@ myscript.js
 ```js
 $(document).ready(function(){
   $('h1').click(function(){
-    $(this).css('background-color','black')
+    $(this).css('background-color','black');
   })
-
-
 });
 
 ```
