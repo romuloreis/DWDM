@@ -75,17 +75,126 @@ Agora vamos definir sua posição. Atribuindo o valor fixed à propriedade posit
 
 Vamos usar [Waypoint](http://imakewebthings.com/waypoints/) para ativar um gatilho ao usar scroll e alcançar um elemento.
 
-Baixar jquery.waypoints.min.js
+Baixar projeto e mover o arquivo jquery.waypoints.min.js para o diretório vendor/js
 
-Exemplo:
+Incluir o js no documento html.
+
 
 ```js
+/*arquivo script.js*/
 
+/*
     var waypoints = $('#handler-first').waypoint(function(direction) {
       notify(this.element.id + ' hit 25% from top of window') 
     }, {
       offset: '25%'
     })
+    
+ */
 
 ```
+
+Vamos programar que quando o scroll chegar na seção _section-features_. Primeiramente, vamos criar uma classe para usar de refência de forma exclusiva para isso, assim se o projeto sofrer alterações no futuro, o script não será afetado.
+
+Na seção de classe _section-features_, vamos criar e adicionar mais uma classe ao elemento, seguinto o formato de nomeclatura _js--section-features_.
+
+```html
+<section class="section-features js--section-features">
+```
+
+No arquivo script.js, vamos programar 
+
+```js
+/*arquivo script.js*/
+
+$(document).ready(function(){
+  $('.js--section-features').waypoint(function(direction){
+    /*direction indica a direção do scrolling: para cima, para baixo */
+    /*Se estiver indo para baixao*/
+    if(direction=="down"){
+       /*Adicionar a classe _sticky_ ao elemento _nav_*/
+       $('nav').addClass('sticky');
+    }else{
+        /*Se tiver indo para cima*/
+       /*Remover a classe _sticky_ do elemento _nav_*/
+       $('nav').removeClass('sticky');
+    }
+    
+  });
+
+
+});
+
+/*
+    var waypoints = $('#handler-first').waypoint(function(direction) {
+      notify(this.element.id + ' hit 25% from top of window') 
+    }, {
+      offset: '25%'
+    })
+    
+ */
+
+```
+
+Agora já podemos apagar a classe _sticky_ do elemento _nav_
+
+Ainda não está perfeito, pois queremos que o menu surja um pouco antes de chegarmos à seção de features. Para isso, no arquivo script.js, vamos programar o seguinte:
+
+```js
+/*arquivo script.js*/
+
+$(document).ready(function(){
+  $('.js--section-features').waypoint(function(direction){
+    /*direction indica a direção do scrolling: para cima, para baixo */
+    /*Se estiver indo para baixao*/
+    if(direction=="down"){
+       /*Adicionar a classe _sticky_ ao elemento _nav_*/
+       $('nav').addClass('sticky');
+    }else{
+        /*Se tiver indo para cima*/
+       /*Remover a classe _sticky_ do elemento _nav_*/
+       $('nav').removeClass('sticky');
+    }
+    
+  }, {
+      /*Define que o gatilho será ativado 60px antes de chegar na seção features*/
+     offset: '60px;'
+  });
+
+
+});
+
+/*
+    var waypoints = $('#handler-first').waypoint(function(direction) {
+      notify(this.element.id + ' hit 25% from top of window') 
+    }, {
+      offset: '25%'
+    })
+    
+ */
+
+```
+
+Note que o menu de navegação está atrás da galeria. Para solucionar isso, basta usar a propriedade z-index e colocar o elemento da classe _sticky_ na frente.
+
+
+```css
+.sticky{
+  /*Posição FIXA*/
+  position: fixed;
+  /*Grudado no topo*/
+  top:0;
+  /*Grudado na esquerda*/
+  left:0;
+  /*Ocupando largura total do VH*/
+  width:100%;
+  /*Um pouquinho de transparência*/
+  background-color: rgba(255, 255,255, 0.95);
+  box-shadow: 0 2px 2px #efefef; /*Adicionar essa linha para efeito de sombra*/
+  z-index: 9999; /*Prioriedade máxima*/
+}
+```
+
+## Suavizando o Scrolling 
+
 
