@@ -195,9 +195,9 @@ Note que o menu de navegação está atrás da galeria. Para solucionar isso, ba
 }
 ```
 
-## Suavizando o Scrolling 
+## Suavizando o Scrolling - Botões do Hero Header
 
-Para suavizar o scrolling para a seção desejada, vamos usar essa biblioteca. Vamos começar pelos botões do hero header. 
+Vamos suavizar o scrolling para a seção desejada. Vamos começar pelos botões do hero header. 
 Primeiramente, vamos criar classes para o uso exclusivo das funções js, tanto para os botões, quanto para as seções que iremos ser redirecionados.
 
 ```html
@@ -252,6 +252,13 @@ $(document).ready(function(){
 
 ```
 
+## Suavizando o Scrolling - Botões do menu de navegação
+
+Para suavizar o scrolling para a seção desejada, vamos usar uma dessas formas [aqui](https://css-tricks.com/snippets/jquery/smooth-scrolling/).
+
+Se optar pela opção do JQuery, basta incluir ids nas seções  e usar ancoras como links.
+
+$function(){}
 
 
 
