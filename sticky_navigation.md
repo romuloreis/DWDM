@@ -197,4 +197,61 @@ Note que o menu de navegação está atrás da galeria. Para solucionar isso, ba
 
 ## Suavizando o Scrolling 
 
+Para suavizar o scrolling para a seção desejada, vamos usar essa biblioteca. Vamos começar pelos botões do hero header. 
+Primeiramente, vamos criar classes para o uso exclusivo das funções js, tanto para os botões, quanto para as seções que iremos ser redirecionados.
+
+```html
+<a class="btn tbn-full js--scroll-to-photos" href="#">bla</a>
+
+<a class="btn tbn-ghost js--scroll-to-testimonials" href="#">bla</a>
+
+```
+
+```html
+<section class="section-photos js--section-photos">
+
+```
+
+
+No nosso arquivo js, vamos programar o comportamento.
+
+```js
+/*arquivo script.js*/
+
+/*Navegaçãqo Sticky*/
+$(document).ready(function(){
+  $('.js--section-features').waypoint(function(direction){
+    /*direction indica a direção do scrolling: para cima, para baixo */
+    /*Se estiver indo para baixao*/
+    if(direction=="down"){
+       /*Adicionar a classe _sticky_ ao elemento _nav_*/
+       $('nav').addClass('sticky');
+    }else{
+        /*Se tiver indo para cima*/
+       /*Remover a classe _sticky_ do elemento _nav_*/
+       $('nav').removeClass('sticky');
+    }
+    
+  }, {
+      /*Define que o gatilho será ativado 60px antes de chegar na seção features*/
+     offset: '60px;'
+  });
+
+/*Suavização do scrolling*/
+
+  /*Ao clicar no elemento classe js--scroll-to-testimonials,
+  seleciona os elementos html e body, então chama animação de scrolling para a seção js--section-photo com velocidade de 1000ms ou seja 1s*/
+   $('.js--scroll-to-testimonials').click(function(){
+      $('html, body').animate({scrollTop: $('.js--section-photo').offset().top}, 1000);
+   
+   });
+
+/*Agora aplique o efeito para os demais botões do hero header*/
+
+});
+
+```
+
+
+
 
