@@ -49,10 +49,5 @@ Monitor: Prof. Aline de Campos
   
   - Quinta-feira 12:00 às 13:30 - Sala 504
   
-  
-  Monitor: Marcelo Pereira
 
-  - Segunda-feira 17:00 às 19:00 - Sala 603
-  
-  - Quarta-feira 17:00 às 19:00 - Sala 603
 
