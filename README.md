@@ -40,6 +40,9 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   - [Media Queries - Tornando nosso site responsivo! Finalmente!](https://github.com/romuloreis/DWDM/blob/master/mediaqueries.md)
   
   - [Dicas para suportar multiplos navegadores](https://github.com/romuloreis/DWDM/blob/master/dicas_navegadores.md)
+  
+  
+  - [código turma noite](https://github.com/romuloreis/DWDM/blob/master/assets/projetonoprato-footer.zip)
 
 ## Horários de monitoria HTML5 + CSS
 
