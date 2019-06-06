@@ -627,11 +627,9 @@ Name all items, and make a ready-to-use webpage template:
 
 ```
 
+## The Order of the Items
 
-```css
 
-```
- 
 # REFER
 
 [symbols in CSS Selector](https://techbrij.com/css-selector-adjacent-child-sibling)
