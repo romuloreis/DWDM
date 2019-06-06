@@ -52,55 +52,58 @@
  ```
 
 ```css
-$colors: rgb(248, 248, 248), rgb(238, 238, 238), rgb(250, 250, 250), rgb(207, 207, 207), rgb(245, 245, 245), rgb(212, 212, 212);
-
 body, html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: 'Montserrat';
+  margin: 0;
+  font-family: 'Montserrat';
 }
 
 h1 {
-    margin: 5rem;
+  margin: 5rem;
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    //grid-gap: 1rem;
-    cursor: pointer;
-
-    .card {
-        
-        transition: transform 1s;
-        
-        @for $i from 1 through 6 {
-            &:nth-of-type(#{$i}) {
-                background: nth($colors, $i);
-            }  
-        }
-
-        &:hover {
-            transform: translateY(-10px);
-        } 
-
-        .info {
-            padding: 1rem;
-            //display: none;
-        }
-    
-        img {
-            width: 100%;
-        }
-
-        .desc {
-            color: gray;
-        }
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  cursor: pointer;
 }
+main .card {
+  transition: transform 1s;
+}
+main .card:nth-of-type(1) {
+  background: #f8f8f8;
+}
+main .card:nth-of-type(2) {
+  background: #eeeeee;
+}
+main .card:nth-of-type(3) {
+  background: #fafafa;
+}
+main .card:nth-of-type(4) {
+  background: #cfcfcf;
+}
+main .card:nth-of-type(5) {
+  background: whitesmoke;
+}
+main .card:nth-of-type(6) {
+  background: #d4d4d4;
+}
+main .card:hover {
+  transform: translateY(-10px);
+}
+main .card .info {
+  padding: 1rem;
+}
+main .card img {
+  width: 100%;
+}
+main .card .desc {
+  color: gray;
+}
+
 ```
 
 
