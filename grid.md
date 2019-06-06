@@ -3,6 +3,12 @@
 # Reminder: 
   - use multiple classes for make the examples simpler
   - **class** item item1
+  
+  ```css
+  .item:nth-child(even){
+    background: #236fc8;
+  }
+  ```
 
 ## Overview - Intro.
 
