@@ -181,3 +181,457 @@ The grid-template-columns property can also be used to specify the size (width) 
   grid-template-columns: 80px 200px auto 40px; /*Set a size for the 4 columns:*/
 }
 ```
+
+
+## The grid-template-rows Property
+The grid-template-rows property defines the height of each row.
+The value is a space-separated-list, where each value defines the height of the respective row:
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80px 200px;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+```
+
+### The justify-content Property
+The justify-content property is used to align the whole grid inside the container.
+
+ > Note: The grid's total width has to be less than the container's width for the justify-content property to have any effect.
+
+**space-evenly** will give the columns equal amount of space between, and around them:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+
+
+</body>
+</html>
+```
+
+**space-around** will give the columns equal amount of space around them:
+
+```css
+.grid-container {
+  display: grid;
+  justify-content: space-around;
+}
+```
+
+**space-between** will give the columns equal amount of space between them:
+
+```css
+.grid-container {
+  display: grid;
+  justify-content: space-between;
+}
+```
+
+**center** will align the grid in the middle of the container:
+
+```css
+.grid-container {
+  display: grid;
+  justify-content: center;
+}
+```
+**start** will align the grid at the beginning of the container:
+```css
+.grid-container {
+  display: grid;
+  justify-content: start;
+}
+
+```
+**end** will align the grid at the end of the container:
+
+```css
+.grid-container {
+  display: grid;
+  justify-content: end;
+}
+```
+
+## The align-content Property
+
+The **align-content property** is used to _**vertically**_ align the whole grid inside the container.
+ > Note: The grid's total height has to be less than the container's height for the align-content property to have any effect.
+ 
+ - The value "center" will align the rows in the middle of the container:
+
+ - The value "space-evenly" will give the rows equal amount of space between, and around them:
+
+ - The value "space-around" will give the rows equal amount of space around them:
+
+ - The value "space-between" will give the rows equal amount of space between them:
+
+ - The value "start" will align the rows at the beginning of the container:
+
+  - The value "end" will align the rows at the end of the container:
+
+
+ 
+ ```html
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The align-content Property</h1>
+
+<p>Use the <em>align-content</em> property to vertically align the grid inside the container.</p>
+
+<p>The value "center" will align the rows in the middle of the container:</p>
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+</body>
+</html>
+```
+
+# Child Elements (Items)
+A grid container contains grid items.
+
+By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows.
+
+## The grid-column Property:
+The grid-column property defines on which column(s) to place an item.
+
+You define where the item will start, and where the item will end.
+
+ > Note: The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties.
+
+To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span.
+
+Examples:
+
+Item1 will start on column-line 1 and end on column-line 5:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / 5;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-column Property</h1>
+
+<p>Use the <em>grid-column</em> property to specify where to place an item.</p>
+<p>Item1 will start on column-line 1 and end on column-line 5:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+  <div class="item9">9</div>
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
+  <div class="item13">13</div>
+  <div class="item14">14</div>
+  <div class="item15">15</div>
+</div>
+
+</body>
+</html>
+
+```
+
+Make "item1" start on column 1 and span 3 columns:
+
+```css
+.item1 {
+  grid-column: 1 / span 3;
+}
+```
+ 
+Make "item2" start on column 2 and span 3 columns:
+```css
+.item2 {
+  grid-column: 2 / span 3;
+}
+```
+
+## The grid-row Property:
+The grid-row property defines on which row to place an item.
+
+You define where the item will start, and where the item will end.
+
+To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span:
+
+ > Note: The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties.
+
+**Examples:**
+Make "item1" start on row-line 1 and end on row-line 4:
+
+```css
+.item1 {
+  grid-row: 1 / 4;
+}
+```
+
+Make "item1" start on row 1 and span 2 rows:
+
+```css
+.item1 {
+  grid-row: 1 / span 2;
+}
+```
+
+## The grid-area Property
+You can use the grid-area property to specify where to place an item.
+
+**The syntax is:**
+
+ - _**grid-row-start / grid-column-start / grid-row-end / grid-column-end.**_
+
+The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties.
+
+Examples:
+Make "item8" start on row-line 1 and column-line 2, and end on row-line 5 and column line 6:
+
+ ```css
+.item8 {
+  grid-area: 1 / 2 / 5 / 6;
+}
+```
+
+Make "item8" start on row-line 2 and column-line 1, and span 2 rows and 3 columns:
+
+```css
+.item8 {
+  grid-area: 2 / 1 / span 2 / span 3;
+}
+```
+
+## Naming Grid Items
+The grid-area property can also be used to assign names to grid items.
+Named grid items can be referred to by the grid-template-areas property of the grid container.
+
+You can use the grid-area property to name grid items.
+You can refer to the name when you set up the grid layout, by using the grid-template-areas property on the grid container.
+
+Item1 gets the name "myArea" and spans all five columns in a five columns grid layout:
+
+```css
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea myArea myArea myArea';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>Item1, is called "myArea" and will take up the place of all five columns:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+</div>
+
+</body>
+</html>
+```
+ Each row is defined by apostrophes (' ')
+
+The columns in each row is defined inside the apostrophes, separated by a space.
+Note: A period sign represents a grid item with no name.
+
+Let "myArea" span two columns in a five columns grid layout (period signs represent items with no name):
+
+ ```css
+ .item1 {
+  grid-area: myArea;
+}
+.grid-container {
+  grid-template-areas: 'myArea myArea . . .';
+} 
+
+```
+
+To define two rows, define the column of the second row inside another set of apostrophes.
+Make "item1" span two columns and two rows:
+
+
+```css
+.grid-container {
+  grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+} 
+
+```
+
+Name all items, and make a ready-to-use webpage template:
+
+```css
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
+
+
+```
+
+
+```css
+
+```
+ 
+# REFER
+
+[symbols in CSS Selector](https://techbrij.com/css-selector-adjacent-child-sibling)
