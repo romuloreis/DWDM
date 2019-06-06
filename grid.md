@@ -1,5 +1,9 @@
 # Notas de aula - Entendo GRID
 
+# Reminder: 
+  - use multiple classes for make the examples simpler
+  - **class** item item1
+
 ## Overview - Intro.
 
 ### Grid Layout
@@ -173,7 +177,7 @@ Make a grid with 4 columns:
 
 ```
 
-The grid-template-columns property can also be used to specify the size (width) of the columns.
+**Explicit**: The grid-template-columns property can also be used to specify the size (width) of the columns. 
 
 ```css
 .grid-container {
@@ -182,6 +186,15 @@ The grid-template-columns property can also be used to specify the size (width) 
 }
 ```
 
+**Repit function(qnt, size)**
+```css
+  grid-template-columns: repeat(4, 220px);
+```
+
+**Using Fraction**
+```css
+  grid-template-columns: 1fr 3fr 1fr;
+```
 
 ## The grid-template-rows Property
 The grid-template-rows property defines the height of each row.
@@ -432,6 +445,13 @@ Make "item2" start on column 2 and span 3 columns:
 ```css
 .item2 {
   grid-column: 2 / span 3;
+}
+```
+
+Make "item2" span 3 columns:
+```css
+.item2 {
+  grid-column: span 3;
 }
 ```
 
