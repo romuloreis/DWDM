@@ -41,6 +41,9 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   
   - [Dicas para suportar multiplos navegadores](https://github.com/romuloreis/DWDM/blob/master/dicas_navegadores.md)
   
+  **Pacote de Imagens**
+   - [baixar](https://github.com/romuloreis/DWDM/blob/master/assets/img.zip)
+  
   **Manhã**
   
   - [código turma manhã](https://github.com/romuloreis/DWDM/blob/master/assets/projetonoprato-manha.zip)
