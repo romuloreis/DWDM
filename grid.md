@@ -1,6 +1,7 @@
 # Notas de aula - Entendo GRID
 
 # Reminder: 
+  - The new [**fr**](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout) unit represents a fraction of the available space in the grid container.
   - use multiple classes for make the examples simpler
   - **class** item item1
   
