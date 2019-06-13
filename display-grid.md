@@ -271,7 +271,9 @@ Agora vamos criar o documento **index3.html** e **index3.css** e estrurar nossa 
 }
 ```
 
-### Alinhamento Geral
+### Alinhamento-espaçamento-distribuição Geral
+
+
 
 ```css
 .grid-container {
@@ -280,8 +282,8 @@ Agora vamos criar o documento **index3.html** e **index3.css** e estrurar nossa 
 	/*Define alinhamento-organização horizontal dos itens*/
 	justify-content: : strectch;
 	
-	/*/*Define alinhamento-organização vertical dos itens*/*/
-	align-items: end;
+	/*Define alinhamento-organização vertical dos itens*/
+	align-content: end;
 }
 ```
 
@@ -555,3 +557,12 @@ Olhe que simples para fazer alterações!
 }
 
 ```
+# Próxima Aula
+
+## justify 2.0
+
+## Auto-fit e Auto-fill
+
+## Galeria Responsiva 2.0
+
+## Fluid Grid System Layout
