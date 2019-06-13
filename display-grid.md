@@ -161,6 +161,14 @@ Podemos definir a altura das linhas do grid por meio da propriedade _grid-auto-r
 
 #### Unidade absoluta
 
+Podemos definir a altura para diferentes linhas
+
+```css
+	/*Define altura das 2 primeiras linhas do grid*/
+	/*a autura das demais linhas vão ser automáticas*/
+	grid-template-rows: 50px 50px;
+```
+
 Ao usar unidade absoluta para definir a altura, o conteúdo pode violar a altura, pois a altura é absoluta*
 
 ```css
@@ -177,6 +185,20 @@ Uma opção para corrigir isso é usar a função _minmax_:
 
 ```css
 	grid-auto-rows: minmax(100px, auto);
+```
+
+
+**Também podemos ter os seguintes contextos:**
+
+```css
+	grid-template-columns: repeat(3, 1fr);
+	/*Define altura das linhas do grid*/
+	grid-template-rows: repeat(2, 100px);
+```
+
+```css
+	/*primeiro atributo é em relação à linha, o segundo é em relação à coluna*/
+	grid-template: repeat(2, 100px) / repeat(3, 1fr);
 ```
 
 ### Nested Grids ou Subgrids 
@@ -327,6 +349,209 @@ Agora vamos criar o documento **index4.html** e **index4.css** e estrurar nossa 
 	grid-column:1;
 	grid-row: 2/4;
 	border: 1px solid #333;
+}
+
+```
+
+
+## Básico (Quinta página)
+
+Agora vamos criar o documento **index5.html** e **index5.css** e estrurar nossa primeira página e estilo básico.
+
+```html
+<body>
+	<div class="grid-container">
+		<div class="header">cabeçalho</div>
+		<div class="menu">menu</div>
+		<div class="content">conteúdo</div>
+		<div class="footer">rodapé</div>
+	</div>
+</body>
+```
+
+
+```css
+.grid-container{
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 40px 40px;
+}
+```
+
+Vamos trabalhar com 3 colunas
+
+```css
+.grid-container{
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 40px 200px 40px;
+}
+```
+O header deve ocupar toda a linha.
+
+
+```css
+.header{
+	/*Sintaxe quebrada*/
+	/*grid-column-start: 1;
+	grid-column-end: 3;*/
+
+	/*Sintaxe abreviada/
+	grid-column:  1 / 3;
+}
+```
+
+Nosso rodapé também deve ocupar uma linha inteira
+
+```css
+.footer{
+	/*
+	grid-column:  1 / 3;
+	grid-column: 1 / span 2;*/
+	
+	/*Começa na coluna 1 e vai até a última coluna (penúltima linha)*/
+	grid-column: 1 / -1;
+}
+
+```
+
+Nosso cabeçalho também deve ir até a última coluna... então vamos atualizar
+
+```css
+.header{
+	grid-column:  1 / -1;
+}
+```
+
+Agora queremos colocar o menu com largura menor que a parte de conteúdo, então podemos redefinir a largura das colunas.
+
+```css
+
+	grid-template-columns: 1fr 4fr;
+
+```
+
+Entretanto, vamos deixar nossa página mais dinamica.
+
+```css
+
+	grid-template-columns: repeat(12, 1fr);
+
+```
+
+E configurar o tamanho do content na mão
+
+```css
+
+.content{
+	grid-column: 2 / -1;
+}
+
+```
+
+## Básico (Sexta página)
+
+Agora vamos criar o documento **index6.html** e **index6.css** e estrurar nossa primeira página e estilo básico.
+
+```html
+<body>
+	<div class="grid-container">
+		<div class="header">cabeçalho</div>
+		<div class="menu">menu</div>
+		<div class="content">conteúdo</div>
+		<div class="footer">rodapé</div>
+	</div>
+</body>
+```
+
+
+```css
+.grid-container{
+	/*altura responsiva*/
+	height: 100%;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px auto 40px;
+}
+.header{
+	grid-column:  1 / -1;
+}
+
+.footer{
+	grid-column: 1 / -1;
+}
+
+.content{
+	grid-column: 2 / -1;
+}
+```
+
+### Template Area
+
+Vamos criar uma string para cada linha e uma célula para cada coluna. 
+
+Aqui não estamos definindo as colunas e linhas, mas dando um nome/apelido para eles.
+
+Teremos então uma representação de como queremos que nosso grid seja mostrado.
+
+```css
+.grid-container{
+	height: 100%;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px auto 40px;
+
+	grid-template-areas: 
+		"h h h h h h h h h h h h"
+		"m c c c c c c c c c c c"
+		"f f f f f f f f f f f f"
+	;
+}
+
+```
+
+Agora vamos deletar o posicionamento dos elementos e usar os apelidos definidos para posicionar os elementos
+
+```css
+.header{
+	grid-area: h;
+}
+
+.footer{
+	grid-area: f;
+}
+
+.content{
+	grid-area: c;
+}
+
+.menu{
+	grid-area: m;
+}
+
+```
+
+	> Note que está responsivo!
+
+Olhe que simples para fazer alterações!
+
+```css
+.grid-container{
+	height: 100%;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 40px auto 40px;
+
+	grid-template-areas: 
+		"m h h h h h h h h h h h"
+		"m c c c c c c c c c c c"
+		"m f f f f f f f f f f ."
+	;
 }
 
 ```
