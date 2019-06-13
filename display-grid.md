@@ -93,7 +93,7 @@ Pronto, já sabemos o básico de GRID.
 
 ## Básico (Segunda página)
 
-Agora vamos criar o documento **index2.html** e **index2.html** e estrurar nossa primeira página e estilo básico.
+Agora vamos criar o documento **index2.html** e **index2.css** e estrurar nossa primeira página e estilo básico.
 
 ```html
 <body>
@@ -221,9 +221,35 @@ Agora vamos criar um grid container dentro de outro grid container.
 }
 ```
 
-### Alinhamento
+## Básico (Terceira página)
+
+Agora vamos criar o documento **index3.html** e **index3.css** e estrurar nossa primeira página e estilo básico.
+
+```html
+<body>
+	<div class="grid-container">
+		<div class="item item1">Lorem</div>
+		<div class="item item2">Lorem</div>
+		<div class="item item3">Lorem</div>
+		<div class="item item4">Lorem</div>
+	</div>
+</body>
+```
 
 
+```css
+.grid-container > div{
+	background: #eee;
+	padding: 1em;
+
+}
+
+.grid-container > div:nth-child(odd){
+	background: #ddd;
+}
+```
+
+### Alinhamento Geral
 
 ```css
 .grid-container {
@@ -237,12 +263,70 @@ Agora vamos criar um grid container dentro de outro grid container.
 }
 ```
 
+## Básico (Quarta página)
 
+Agora vamos criar o documento **index4.html** e **index4.css** e estrurar nossa primeira página e estilo básico.
 
-```css
+```html
+<body>
+	<div class="grid-container">
+		<div class="item item1">Lorem</div>
+		<div class="item item2">Lorem</div>
+		<div class="item item3">Lorem</div>
+		<div class="item item4">Lorem</div>
+	</div>
+</body>
 ```
 
 
+```css
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	/*Define espaçamento entre colunas*/
+	grid-column-gap: 1em;
+	/*Define espaçamento entre linhas*/
+	grid-row-gap: 1em;
+	/*Define espaçamento entre ambos... linhas e colunas*/
+	grid-gap: 1em;
+	/*Define altura das linhas do grid*/
+	grid-auto-rows: minmax(100px, auto);
+
+}
+
+.grid-container > div{
+	background: #eee;
+	padding: 1em;
+
+}
+
+.grid-container > div:nth-child(odd){
+	background: #ddd;
+}
+
+```
+
+### Posicionamento Básico
+
 
 ```css
+.item1{
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+.item2{
+	grid-column: 3;
+	grid-row: 1/3;
+}
+.item3{
+	grid-column: 2/4;
+	grid-row: 3;
+}
+.item4{
+	/*Sobreposição*/
+	grid-column:1;
+	grid-row: 2/4;
+	border: 1px solid #333;
+}
+
 ```
