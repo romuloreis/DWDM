@@ -181,14 +181,60 @@ Uma opção para corrigir isso é usar a função _minmax_:
 
 ### Nested Grids ou Subgrids 
 
+Agora vamos criar um grid container dentro de outro grid container.
 
 
-```css
+```html
+<body>
+	<div class="grid-container">
+		<div>Lorem</div>
+		<div>Lorem</div>
+		
+		<div class="nested-container">
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+			<div>Lorem</div>
+		</div>
+		
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+		<div>Lorem</div>
+	</div>
+</body>
 ```
 
 
+```css
+.nested-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 70px;
+	grid-gap: 1em;
+}
+
+.nested-container > div{
+	border: #333 1px solid;
+	padding: 1em;
+}
+```
+
+### Alinhamento
+
+
 
 ```css
+.grid-container {
+	/*Demais propriedades*/
+	
+	/*Define alinhamento-organização horizontal dos itens*/
+	justify-content: : strectch;
+	
+	/*/*Define alinhamento-organização vertical dos itens*/*/
+	align-items: end;
+}
 ```
 
 
