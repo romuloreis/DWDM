@@ -1,7 +1,3 @@
-# Focar no profissional ou em conteúdo de responsividade
-
-
-
 # Menu de navegação Responsivo
 
 Quando o viewport tiver uma largura menor, o menu será substituído por um ícone. 
@@ -199,7 +195,6 @@ O método _slideToggle(tempo_duração_ms)_ serve para abrir e fechar boxes.
 
 Como os ícones são modificados pelo nome da classe, basta mudar o nome da mesma para alterar o ícone.
 
-#Explicar estrutura do if e js para quem for do primeiro semestre
 
 ```js
 /* Mobile navigation */
