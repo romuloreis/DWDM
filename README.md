@@ -16,6 +16,7 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   - Banco de Imagens: [unsplash](https://unsplash.com/), [burst](https://pt.shopify.com/burst/imagens-sem-direitos-autorais)
   - Fontes: [Google Fonts](https://fonts.google.com/)
   - Compressores de script: [cssminifier](https://cssminifier.com/), [minifier](https://www.minifier.org/)
+  - Wireframes: [Figma](https://www.figma.com/), [Draw.io](https://www.draw.io/), [NinjaMock](https://ninjamock.com/)
 
 ## One-page web
 
