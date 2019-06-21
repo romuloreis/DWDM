@@ -35,12 +35,17 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   - [Depoimentos](https://github.com/romuloreis/DWDM/blob/master/setima-etapa.md)(Sétima Etapa)
   - [Documentação versão 7](https://github.com/romuloreis/DWDM/blob/master/documento%207.md)
   - [Rodapé](https://github.com/romuloreis/DWDM/blob/master/oitava-etapa.md)(Oitava Etapa)
-  
+     
   - [Código até esse ponto](https://github.com/romuloreis/DWDM/blob/master/assets/projetonoprato-footer.rar)
   
   - [Media Queries - Tornando nosso site responsivo! Finalmente!](https://github.com/romuloreis/DWDM/blob/master/mediaqueries.md)
   
   - [Dicas para suportar multiplos navegadores](https://github.com/romuloreis/DWDM/blob/master/dicas_navegadores.md)
+  
+    **NEW - NOVO**
+   - [Sticky Navigation](https://github.com/romuloreis/DWDM/blob/master/sticky_navigation.md)
+   - [Menu Responsivo](https://github.com/romuloreis/DWDM/blob/master/menuresponsivo.md)
+  
   
   **Pacote de Imagens**
    - [baixar](https://github.com/romuloreis/DWDM/blob/master/assets/img.zip)
