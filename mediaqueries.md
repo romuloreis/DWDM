@@ -211,7 +211,7 @@ Primeiramente, vamos reduzir o espaçamento entre os ícones e seus textos. Os �
 	.city-feature { font-size: 90%; }
 }
 ```
-]
+
 ## Seguindo para os Smartphones e pequenos Tablets (max-width: 767px)
 
 Com uma tela desse tamanho, vai aparecer até uma barra de rolagem horizontal, pois temos textos que vão "violar" as bordas. Para resolver esse problema, vamos usar o valor _hidden_ na propriedade _overflow-x_ no seletor _html_ do arquivo style.css
@@ -314,6 +314,181 @@ O tamanho dos títulos (headings) estão muito grandes para esse tamanho de tela
 	}
 }
 ```
+
+**Demais seções e ajustes**
+
+
+```css
+	.long-copy{
+		width: 100%;
+    	margin-left: 0%;
+	}
+
+	/*Precisamos minimizar espaço em branco, até pq não temos mais tanto espaço assim.*/
+	.step {margin-bottom: 20px;}
+	/*Ajusta apenas o espaçamento apenas do último passo. last-of-type similar ao last-child*/
+	.step:last-of-type {margin-bottom: 20px;}
+
+	/*Ajuste do tamanho da fonte, largura, altura e redução do padding e margem direita*/
+	.step div {
+	    height: 40px;/*Define altura*/
+	    width: 40px;/*Mesmo valor da altura, afinal queremos um circulo*/
+	    padding: 4px;/*espaço entre texto e borda do container*/
+	    margin-right: 15px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+		font-size: 120%;
+	}
+
+	/*Centralizando a imagem*/
+	.steps-box:first-child{text-align: center;}
+	.app-screen{width: 40%} /*Diminuindo o tamanho da imagem*/
+
+	/*As colunas não estão alinhadas!
+	A classe col do grid.css está assim margin: 1% 0 1% 1.6%;
+	vamos alterar esses valores...
+	Vamos adicionar essa propriedade à nossa regra já existente p essa classe e 
+	definir apenas um espaçamento vertical, pois as colunas estão uma em cima da outra
+*/
+	.col{ 
+		width: 100%; 
+		margin: 0 0 4% 0;
+	}
+```	
+
+
+
+
+
+## Seguindo para os Smartphones e pequenos (max-width: 480px)
+
+```css
+@media only screen and (max-width: 480px){
+	/*Pequenos celulares: largura entre 0px e 480px*/
+	section {padding: 25px 0;} /*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
+}
+```
+
+
+## Meu código css completo
+
+<details>
+  <summary>Clique aqui para ver o código css completo</summary>
+
+```css
+/*O valor dessa query de ser o mesmo valor da propriedade de largura máxima (width) 
+da classe ROW que definimos no style.css.
+Lembrando que a esse valor deveria ter sido definido com base na tela da sua estação de trabalho (workstation)*/
+@media only screen and (max-width: 1200px){
+/*Telas grandes de até 1200px de largura*/
+	.hero-text-box {
+		/*vamos sobresquever o valor dessa propriedade*/
+	    width: 100%; /*Não queremos mais um valor fixo, queremos que seja 100% da largura da linha row definido anteriormente*/
+	   /*vamos colocar um espaçamento minimo entre o texto e a borda do navegador*/
+	   padding: 0 2%; /*topo e bottom = 0 | right e left = 2%, para o texto não grudar na borda*/
+	}
+
+	.row{
+		/*vamos colocar um espaçamento mínimo entre as laterais da linha (row) e a borda do navegador*/
+		padding: 0 2%;/*topo e bottom = 0 | right e left = 2%*/
+	}
+
+}
+
+@media only screen and (max-width: 1023px){
+	/*Pequenos e grandes tablets: largura entre 768px e 1023px*/
+	body{font-size: 18px;} /*Define o tamanho de fonte padrão para esse tamanho de tela*/
+
+	section {padding: 60px 0;} /*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
+
+	.long-copy{
+		width: 80%; /*ocupa 80%, sobra 20%*/
+    	margin-left: 10%; /*10% para cada lado*/
+	}
+
+	/*Precisamos minimizar espaço em branco, até pq não temos mais tanto espaço assim.*/
+	.steps-box{margin-top: 10px;}
+	.steps-box:last-child{margin-top: 10px;}
+	.step {margin-bottom: 40px;}
+	/*Ajusta apenas o espaçamento apenas do último passo. last-of-type similar ao last-child*/
+	.step:last-of-type {margin-bottom: 60px;}
+	.app-screen{width: 50%} /*Aumenta o tamanho da imagem*/
+
+	.icon-small{ 
+		width: 20px; 
+		margin-right: 5px;
+	}
+	.city-feature { font-size: 90%; }
+
+}
+
+
+@media only screen and (max-width: 767px){
+	/*Pequenos telefones até pequenos tablets: largura entre 481px e 767px*/
+
+	/*Tela menor, tamanho da fonte menor também!*/
+	body{font-size: 16px;}
+	/*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
+	section {padding: 30px 0;} 
+
+	.row,
+	.hero-text-box {padding: 0 4%;}
+
+	/*Nesse ponto, vamos definir que as colunas ocuparão a largura máxima da linha (classe row).
+	Ou seja, uma coluna por linha (coluna única)*/
+	.col{ width: 100%; }
+
+	/*Escondendo a barra de navegação (temporariamente)*/
+	.nav-main {display: none;}
+
+	h1{ font-size: 180% }
+	h1{ font-size: 150% }
+
+	.long-copy{
+		width: 100%;
+    	margin-left: 0%;
+	}
+
+	/*Precisamos minimizar espaço em branco, até pq não temos mais tanto espaço assim.*/
+	.step {margin-bottom: 20px;}
+	/*Ajusta apenas o espaçamento apenas do último passo. last-of-type similar ao last-child*/
+	.step:last-of-type {margin-bottom: 20px;}
+
+	/*Ajuste do tamanho da fonte, largura, altura e redução do padding e margem direita*/
+	.step div {
+	    height: 40px;/*Define altura*/
+	    width: 40px;/*Mesmo valor da altura, afinal queremos um circulo*/
+	    padding: 4px;/*espaço entre texto e borda do container*/
+	    margin-right: 15px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+		font-size: 120%;
+	}
+
+	/*Centralizando a imagem*/
+	.steps-box:first-child{text-align: center;}
+	.app-screen{width: 40%} /*Diminuindo o tamanho da imagem*/
+
+	/*As colunas não estão alinhadas!
+	A classe col do grid.css está assim margin: 1% 0 1% 1.6%;
+	vamos alterar esses valores...
+	Vamos adicionar essa propriedade à nossa regra já existente p essa classe e 
+	definir apenas um espaçamento vertical, pois as colunas estão uma em cima da outra
+*/
+	.col{ 
+		width: 100%; 
+		margin: 0 0 4% 0;
+	}
+	
+
+}
+
+
+@media only screen and (max-width: 480px){
+	/*Pequenos celulares: largura entre 0px e 480px*/
+	section {padding: 25px 0;} /*Define um novo valor de espaçamento top e bottom entre as seções para esse tamanho de tela*/
+}
+
+```
+
+</details>
+
 
 ## Material complementar
 
