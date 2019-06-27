@@ -45,7 +45,11 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
     **NEW - NOVO**
    - [Sticky Navigation](https://github.com/romuloreis/DWDM/blob/master/sticky_navigation.md)
    - [Menu Responsivo](https://github.com/romuloreis/DWDM/blob/master/menuresponsivo.md)
-  
+   - [Menu Responsivo - material externo](https://css-tricks.com/convert-menu-to-dropdown/)
+   - [Exemplos de menu responsivos](https://1stwebdesigner.com/code-snippets-responsive-navigation-menu/)
+   - [Aula sobre Grid](https://github.com/romuloreis/DWDM/blob/master/display-grid.md)
+   - [Explicação sobre GRID](https://gridbyexample.com/)
+   - [Grid Resumão](https://css-tricks.com/snippets/css/complete-guide-grid/)
   
   **Pacote de Imagens**
    - [baixar](https://github.com/romuloreis/DWDM/blob/master/assets/img.zip)
