@@ -42,7 +42,6 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   
   - [Dicas para suportar multiplos navegadores](https://github.com/romuloreis/DWDM/blob/master/dicas_navegadores.md)
   
-    **NEW - NOVO**
    - [Sticky Navigation](https://github.com/romuloreis/DWDM/blob/master/sticky_navigation.md)
    - [Menu Responsivo](https://github.com/romuloreis/DWDM/blob/master/menuresponsivo.md)
    - [Menu Responsivo - material externo](https://css-tricks.com/convert-menu-to-dropdown/)
@@ -50,6 +49,10 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
    - [Aula sobre Grid](https://github.com/romuloreis/DWDM/blob/master/display-grid.md)
    - [Explicação sobre GRID](https://gridbyexample.com/)
    - [Grid Resumão](https://css-tricks.com/snippets/css/complete-guide-grid/)
+   
+  **NEW - NOVO**
+  
+  - [Smooth Scrolling](https://css-tricks.com/snippets/jquery/smooth-scrolling/)
   
   **Pacote de Imagens**
    - [baixar](https://github.com/romuloreis/DWDM/blob/master/assets/img.zip)
