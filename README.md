@@ -37,8 +37,6 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   - [Documentação versão 7](https://github.com/romuloreis/DWDM/blob/master/documento%207.md)
   - [Rodapé](https://github.com/romuloreis/DWDM/blob/master/oitava-etapa.md)(Oitava Etapa)
      
-  [comment]: <> (projetonoprato-footer.rar)
-  
   - [Media Queries - Tornando nosso site responsivo! Finalmente!](https://github.com/romuloreis/DWDM/blob/master/mediaqueries.md)
   
   - [Dicas para suportar multiplos navegadores](https://github.com/romuloreis/DWDM/blob/master/dicas_navegadores.md)
@@ -57,10 +55,6 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   
   **Pacote de Imagens**
    - [baixar](https://github.com/romuloreis/DWDM/blob/master/assets/img.zip)
-
-    [comment]: <> (projetonoprato-manha.zip)
- 
-    [comment]: <> (projetonoprato-footer.zip)
 
 ## Horários de monitoria HTML5 + CSS
 
