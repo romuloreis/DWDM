@@ -56,13 +56,7 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   **Pacote de Imagens**
    - [baixar](https://github.com/romuloreis/DWDM/blob/master/assets/img.zip)
 
-## Horários de monitoria HTML5 + CSS
-
-Monitor: Prof. Aline de Campos
-
-  - Quarta-feira 17:30 às 19:00 - Sala 503
-  
-  - Quinta-feira 12:00 às 13:30 - Sala 504
+**GRID** [ref1](https://www.origamid.com/projetos/css-grid-layout-guia-completo/) ref2(https://www.w3schools.com/css/css_grid.asp)
   
 
 
