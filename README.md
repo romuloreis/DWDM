@@ -56,7 +56,7 @@ Dúvidas ou sugestões? rrdoliveira@senacrs.com.br
   **Pacote de Imagens**
    - [baixar](https://github.com/romuloreis/DWDM/blob/master/assets/img.zip)
 
-**GRID** [ref1](https://www.origamid.com/projetos/css-grid-layout-guia-completo/) ref2(https://www.w3schools.com/css/css_grid.asp)
+**GRID** [ref1](https://www.origamid.com/projetos/css-grid-layout-guia-completo/) ref2(https://www.w3schools.com/css/css_grid.asp) [ref3](https://css-tricks.com/things-ive-learned-css-grid-layout/)
   
 
 
