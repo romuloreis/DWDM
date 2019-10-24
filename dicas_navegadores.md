@@ -45,7 +45,7 @@ Para os navegadores antigos entender/suportarem Media Query https://www.jsdelivr
 <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script>
 ```
 
-HTML5 suporte para navegadores existentes antes do HTML5 (Internet Explorer 6-9, Safari 4.x (iPhone 3.x), e Firefox 3.x.)  https://www.jsdelivr.com/package/npm/html5shiv
+Suporte à HTML5 sectioning tags para navegadores existentes antes do HTML5 (Internet Explorer 6-9, Safari 4.x (iPhone 3.x), e Firefox 3.x.)  https://www.jsdelivr.com/package/npm/html5shiv
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
