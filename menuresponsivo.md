@@ -18,8 +18,7 @@ No documento html, vamos criar um link logo após fechar o elemento _ul_, que é
       <!--itens do menu menus-->
     </ul>
 
-    <ion-icon name="menu"></ion-icon>
-    < a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+    <a class="mobile-nav-icon js--nav-icon" href="#" ><ion-icon name="menu" class="ion-navicon-round"></ion-icon></a>
 
   <!--Fechamento do elemento div de classe row que está dentro do elemento nav-->
   </div>
@@ -187,7 +186,7 @@ vamos criar uma classe apenas para interação com código JavaScript, conforme 
     <ul class="main-nav js--main-nav">
         <!--Elementos da lista do menu-->
     </ul>
-    < a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+    <a class="mobile-nav-icon js--nav-icon" href="#" ><ion-icon name="menu" class="ion-navicon-round"></ion-icon></a>
 ```
 
 No arquivo de scripts, vamos usar variáveis do tipo _var_ para armazenar seleções que iremos reutilizar. Evitando repetição de código.
